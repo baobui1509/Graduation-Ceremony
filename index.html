@@ -963,7 +963,7 @@ html {
 
 .thiepsinhnhat__countdown {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: var(--thiepsinhnhat-spacing-md);
 }
 
@@ -1288,7 +1288,7 @@ html {
     }
     
     .thiepsinhnhat__countdown {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: var(--thiepsinhnhat-spacing-sm);
     }
     
@@ -1303,6 +1303,18 @@ html {
     
     .thiepsinhnhat__floating-elements-item {
         font-size: 1.5rem;
+    }
+
+    /* Giữ ngày/giờ ở viewport đầu, đẩy địa điểm sang viewport kế tiếp */
+    .thiepsinhnhat__card-back {
+        scroll-snap-type: y proximity;
+    }
+    .thiepsinhnhat__card-details-item {
+        scroll-snap-align: start;
+    }
+    .thiepsinhnhat__card-details-item:last-child {
+        margin-top: var(--thiepsinhnhat-spacing-xl);
+        min-height: 55vh;
     }
     
     .thiepsinhnhat__music {
@@ -1371,17 +1383,22 @@ html {
         font-size: 1.4rem;
     }
     
+    .thiepsinhnhat__countdown {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: var(--thiepsinhnhat-spacing-xs) var(--thiepsinhnhat-spacing-sm);
+    }
+    
     .thiepsinhnhat__countdown-circle {
-        width: 70px;
-        height: 70px;
+        width: 64px;
+        height: 64px;
     }
     
     .thiepsinhnhat__countdown-value {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
     .thiepsinhnhat__countdown-label {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     
     .thiepsinhnhat__card-details-item {
@@ -1695,7 +1712,7 @@ html {
                                 </div>
                                 
                                 <h1 class="thiepsinhnhat__card-title">
-                                    <span class="thiepsinhnhat__card-title-line thiepsinhnhat__card-title-line--top">Lễ tốt nghiệp Trường Đại học Khoa học Tự nhiên</span>
+                                    <span class="thiepsinhnhat__card-title-line thiepsinhnhat__card-title-line--top">Trường Đại học Khoa học Tự nhiên</span>
                                     <span class="thiepsinhnhat__card-title-main">Graduation Ceremony</span>
                                     <span class="thiepsinhnhat__card-title-line thiepsinhnhat__card-title-line--bottom">Bùi Thiên Bảo</span>
                                 </h1>
@@ -1755,8 +1772,8 @@ html {
                                         <span class="thiepsinhnhat__card-name-text" id="guestName" data-field="guest-name">Nguyễn Văn A</span>
                                     </h2>
                                     <p class="thiepsinhnhat__card-age">
-                                        <span class="thiepsinhnhat__card-age-label" style="color: #fff;">Khóa tốt nghiệp</span>
-                                        <strong class="thiepsinhnhat__card-age-number" id="guestAge" style="color: #fff;">2021</strong>
+                                        <span class="thiepsinhnhat__card-age-label" style="color: #fff;">aka</span>
+                                        <strong class="thiepsinhnhat__card-age-number" id="guestAge" style="color: #fff;">Thân mời</strong>
                                     </p>
                                 </div>
                             </section>
