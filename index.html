@@ -1307,18 +1307,30 @@ html {
 
     /* Giữ ngày/giờ ở viewport đầu, đẩy địa điểm sang viewport kế tiếp */
     .thiepsinhnhat__card-back {
-        scroll-snap-type: y proximity;
-        padding-top: calc(var(--thiepsinhnhat-spacing-xl) + 20px);
+        scroll-snap-type: y mandatory;
+        scroll-padding-top: calc(var(--thiepsinhnhat-spacing-xl) + 40px);
+        padding-top: calc(var(--thiepsinhnhat-spacing-xxl) + 10px);
+    }
+    .thiepsinhnhat__card-back-content {
+        padding-top: var(--thiepsinhnhat-spacing-lg);
     }
     .thiepsinhnhat__card-details-item {
         scroll-snap-align: start;
-    }
-    .thiepsinhnhat__card-details-item:last-child {
-        margin-top: var(--thiepsinhnhat-spacing-xl);
-        min-height: 55vh;
+        scroll-snap-stop: always;
     }
     .thiepsinhnhat__card-details-section {
         margin-top: var(--thiepsinhnhat-spacing-lg);
+    }
+    .thiepsinhnhat__card-details-item:first-child {
+        margin-top: var(--thiepsinhnhat-spacing-md);
+    }
+    .thiepsinhnhat__card-details-item:nth-child(1),
+    .thiepsinhnhat__card-details-item:nth-child(2) {
+        min-height: 40vh;
+    }
+    .thiepsinhnhat__card-details-item:nth-child(3) {
+        margin-top: var(--thiepsinhnhat-spacing-xl);
+        min-height: 85vh;
     }
     
     .thiepsinhnhat__music {
