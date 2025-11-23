@@ -1308,6 +1308,7 @@ html {
     /* Giữ ngày/giờ ở viewport đầu, đẩy địa điểm sang viewport kế tiếp */
     .thiepsinhnhat__card-back {
         scroll-snap-type: y proximity;
+        padding-top: calc(var(--thiepsinhnhat-spacing-xl) + 20px);
     }
     .thiepsinhnhat__card-details-item {
         scroll-snap-align: start;
@@ -1315,6 +1316,9 @@ html {
     .thiepsinhnhat__card-details-item:last-child {
         margin-top: var(--thiepsinhnhat-spacing-xl);
         min-height: 55vh;
+    }
+    .thiepsinhnhat__card-details-section {
+        margin-top: var(--thiepsinhnhat-spacing-lg);
     }
     
     .thiepsinhnhat__music {
