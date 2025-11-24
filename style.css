@@ -629,7 +629,7 @@ html {
   width: 100%;
   background: var(--thieptotnghiep-gradient-dark);
   border-radius: var(--thieptotnghiep-radius-xl);
-  padding: var(--thieptotnghiep-spacing-xl);
+  padding: var(--thieptotnghiep-spacing-sm);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -669,7 +669,8 @@ html {
     rgba(0, 0, 0, 0.3) 100%
   );
   width: 100%;
-  padding: 40px;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .thieptotnghiep__card-back-overlay {
@@ -1172,32 +1173,32 @@ html {
 }
 
 .thieptotnghiep__card-corner--tl {
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
   border-right: none;
   border-bottom: none;
   border-radius: var(--thieptotnghiep-radius-sm) 0 0 0;
 }
 
 .thieptotnghiep__card-corner--tr {
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   border-left: none;
   border-bottom: none;
   border-radius: 0 var(--thieptotnghiep-radius-sm) 0 0;
 }
 
 .thieptotnghiep__card-corner--bl {
-  bottom: 20px;
-  left: 20px;
+  bottom: 10px;
+  left: 10px;
   border-right: none;
   border-top: none;
   border-radius: 0 0 0 var(--thieptotnghiep-radius-sm);
 }
 
 .thieptotnghiep__card-corner--br {
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   border-left: none;
   border-top: none;
   border-radius: 0 0 var(--thieptotnghiep-radius-sm) 0;
