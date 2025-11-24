@@ -12,14 +12,21 @@
       content="thiệp mời tốt nghiệp, graduation invitation"
     />
     <meta name="author" content="Doanhtuat" />
-    <meta property="og:title" content="Thiệp Mời Lễ Tốt Nghiệp" />
+    <meta property="og:title" content="Thiệp mời dự Lễ Tốt Nghiệp của Bảo Bùi" />
     <meta
       property="og:description"
       content="Thiệp mời lễ tốt nghiệp Trường Đại học Khoa học Tự nhiên"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./img/metaimg.png" />
+    <meta
+      property="og:image"
+      content="https://baobui1509.github.io/Graduation-Ceremony/img/thumbnail.png"
+    />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://baobui1509.github.io/Graduation-Ceremony/img/thumbnail.png"
+    />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://yourwebsite.com/thiep-sinh-nhat" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -402,7 +409,7 @@
                         data-field="message"
                         style="color: #fff"
                       >
-                        "yooooo wassupppp anh em"
+                        "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này."
                       </p>
                     </blockquote>
                   </div>
@@ -634,6 +641,10 @@
     <canvas class="thieptotnghiep__canvas" id="canvas"></canvas>
 
     <script>
+      // Thumbnail dùng chung cho preview chia sẻ
+      const SHARE_IMAGE_URL =
+        "https://baobui1509.github.io/Graduation-Ceremony/img/thumbnail.png";
+
       // ===================================
       // Invitation Defaults
       // ===================================
@@ -651,6 +662,7 @@
         ],
         message: "yooooo wassupppp anh em",
         image: "https://i.pravatar.cc/300?img=12",
+        shareImage: SHARE_IMAGE_URL,
         metaTitle: "Thiệp mời lễ tốt nghiệp",
         metaDescription:
           "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
@@ -1442,6 +1454,10 @@
         const title = invitation.metaTitle || fallbackTitle;
         const description =
           invitation.metaDescription || DEFAULT_INVITATION.metaDescription;
+        const shareImage =
+          invitation.shareImage ||
+          DEFAULT_INVITATION.shareImage ||
+          DEFAULT_INVITATION.image;
 
         document.title = title;
 
@@ -1452,7 +1468,12 @@
           [
             'meta[property="og:image"]',
             "content",
-            invitation.image || DEFAULT_INVITATION.image,
+            shareImage,
+          ],
+          [
+            'meta[name="twitter:image"]',
+            "content",
+            shareImage,
           ],
         ];
 
@@ -1559,6 +1580,13 @@
 
           const guest = data.guests[guestKey];
 
+          // Gộp với DEFAULT_INVITATION để dùng chung các giá trị cố định
+          const guestData = { ...DEFAULT_INVITATION, ...(guest || {}) };
+          const shareImage =
+            guestData.shareImage ||
+            DEFAULT_INVITATION.shareImage ||
+            SHARE_IMAGE_URL;
+
           // Cập nhật nội dung trang
           // Ví dụ: tên, tuổi, ngày, giờ, địa điểm, lời nhắn, ảnh, meta...
           // Bạn chỉnh lại selector cho đúng HTML của mình
@@ -1567,12 +1595,12 @@
           const nameEls = document.querySelectorAll(
             '[data-field="guest-name"]'
           );
-          nameEls.forEach((el) => (el.textContent = guest.name));
+          nameEls.forEach((el) => (el.textContent = guestData.name));
 
           // Tuổi (nếu có dùng)
           const ageEl = document.querySelector('[data-field="guest-age"]');
           if (ageEl) {
-            ageEl.textContent = guest.age;
+            ageEl.textContent = guestData.age;
           }
 
           // Ngày hiển thị (chuỗi tiếng Việt)
@@ -1580,47 +1608,48 @@
             '[data-field="date-display"]'
           );
           if (dateDisplayEl) {
-            dateDisplayEl.textContent = guest.dateDisplay;
+            dateDisplayEl.textContent = guestData.dateDisplay;
           }
 
           // Giờ
           const timeEl = document.querySelector('[data-field="time"]');
           if (timeEl) {
-            timeEl.textContent = guest.time;
+            timeEl.textContent = guestData.time;
           }
 
           // Địa điểm (mảng nhiều dòng)
           const locationEl = document.querySelector('[data-field="location"]');
-          if (locationEl && Array.isArray(guest.location)) {
-            locationEl.innerHTML = guest.location.join("<br>");
+          if (locationEl && Array.isArray(guestData.location)) {
+            locationEl.innerHTML = guestData.location.join("<br>");
           }
 
           // Lời nhắn
           const messageEl = document.querySelector('[data-field="message"]');
           if (messageEl) {
-            messageEl.textContent = guest.message;
+            messageEl.textContent = guestData.message;
           }
 
           // Ảnh đại diện
           const avatarEl = document.querySelector('[data-field="avatar"]');
           if (avatarEl) {
-            avatarEl.src = guest.image;
-            avatarEl.alt = guest.name;
+            avatarEl.src = guestData.image;
+            avatarEl.alt = guestData.name;
           }
 
           // Meta title / description cho share link
-          if (guest.metaTitle) {
-            document.title = guest.metaTitle;
+          if (guestData.metaTitle) {
+            document.title = guestData.metaTitle;
             const ogTitle = document.querySelector('meta[property="og:title"]');
             const twitterTitle = document.querySelector(
               'meta[name="twitter:title"]'
             );
-            if (ogTitle) ogTitle.setAttribute("content", guest.metaTitle);
-            if (twitterTitle)
-              twitterTitle.setAttribute("content", guest.metaTitle);
+            if (ogTitle) ogTitle.setAttribute("content", guestData.metaTitle);
+            if (twitterTitle) {
+              twitterTitle.setAttribute("content", guestData.metaTitle);
+            }
           }
 
-          if (guest.metaDescription) {
+          if (guestData.metaDescription) {
             const desc = document.querySelector('meta[name="description"]');
             const ogDesc = document.querySelector(
               'meta[property="og:description"]'
@@ -1628,11 +1657,20 @@
             const twitterDesc = document.querySelector(
               'meta[name="twitter:description"]'
             );
-            if (desc) desc.setAttribute("content", guest.metaDescription);
-            if (ogDesc) ogDesc.setAttribute("content", guest.metaDescription);
+            if (desc) desc.setAttribute("content", guestData.metaDescription);
+            if (ogDesc)
+              ogDesc.setAttribute("content", guestData.metaDescription);
             if (twitterDesc)
-              twitterDesc.setAttribute("content", guest.metaDescription);
+              twitterDesc.setAttribute("content", guestData.metaDescription);
           }
+
+          // Ảnh share cố định
+          const ogImage = document.querySelector('meta[property="og:image"]');
+          const twitterImage = document.querySelector(
+            'meta[name="twitter:image"]'
+          );
+          if (ogImage) ogImage.setAttribute("content", shareImage);
+          if (twitterImage) twitterImage.setAttribute("content", shareImage);
 
           // TODO: nếu bạn có countdown thì ở đây đọc guest.countdownDate và khởi động lại đồng hồ
         })

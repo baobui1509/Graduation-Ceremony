@@ -662,8 +662,8 @@ html {
 }
 
 .card-top-section {
-    position: relative;
-    background: radial-gradient(
+  position: relative;
+  background: radial-gradient(
     circle at center,
     transparent 0%,
     rgba(0, 0, 0, 0.3) 100%
