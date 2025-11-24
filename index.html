@@ -750,7 +750,7 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: var(--thieptotnghiep-spacing-sm);
+    margin-bottom: 5px;
     filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
 }
 
@@ -1324,9 +1324,12 @@ html {
 
 @media (max-width: 480px) {
     .thieptotnghiep__card-avatar-section {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-}
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    .thieptotnghiep__card-age-label{
+        font-size: 0.75rem;
+    }
     .thieptotnghiep__container {
         padding: var(--thieptotnghiep-spacing-sm);
     }
@@ -1358,13 +1361,17 @@ html {
         width: 120px;
         height: 120px;
     }
+
+    .thieptotnghiep__card-avatar {
+        margin-bottom: 15px;
+    }
     
     .thieptotnghiep__card-name {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
     
     .thieptotnghiep__card-age-number {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     .thieptotnghiep__card-message {
@@ -1700,7 +1707,7 @@ html {
                                 </div>
                                 
                                 <h1 class="thieptotnghiep__card-title">
-                                    <span class="thieptotnghiep__card-title-line thieptotnghiep__card-title-line--top">Trường Đại học Khoa học Tự nhiên</span>
+                                    <span class="thieptotnghiep__card-title-line thieptotnghiep__card-title-line--top">Trường&nbsp;Đại&nbsp;học Khoa&nbsp;học&nbsp;Tự&nbsp;nhiên</span>
                                     <span class="thieptotnghiep__card-title-main">Graduation Ceremony</span>
                                     <span class="thieptotnghiep__card-title-line thieptotnghiep__card-title-line--bottom">Bùi Thiên Bảo</span>
                                 </h1>
