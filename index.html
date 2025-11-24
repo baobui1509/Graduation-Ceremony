@@ -1,2227 +1,914 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thiệp mời lễ tốt nghiệp Trường Đại học Khoa học Tự nhiên">
-    <meta name="keywords" content="thiệp mời tốt nghiệp, graduation invitation">
-    <meta name="author" content="Doanhtuat">
-    <meta property="og:title" content="Thiệp Mời Lễ Tốt Nghiệp">
-    <meta property="og:description" content="Thiệp mời lễ tốt nghiệp Trường Đại học Khoa học Tự nhiên">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./img/metaimg.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://yourwebsite.com/thiep-sinh-nhat">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thiệp mời lễ tốt nghiệp Trường Đại học Khoa học Tự nhiên"
+    />
+    <meta
+      name="keywords"
+      content="thiệp mời tốt nghiệp, graduation invitation"
+    />
+    <meta name="author" content="Doanhtuat" />
+    <meta property="og:title" content="Thiệp Mời Lễ Tốt Nghiệp" />
+    <meta
+      property="og:description"
+      content="Thiệp mời lễ tốt nghiệp Trường Đại học Khoa học Tự nhiên"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./img/metaimg.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yourwebsite.com/thiep-sinh-nhat" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Thiệp Mời Lễ Tốt Nghiệp | Graduation Invitation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<style>
-    /* ===================================
-   CSS Variables & Reset
-   =================================== */
-:root {
-    /* Luxury Color Palette */
-    --thieptotnghiep-color-primary: #d4af37;
-    --thieptotnghiep-color-secondary: #aa8f3b;
-    --thieptotnghiep-color-accent: #ffd700;
-    --thieptotnghiep-color-dark: #1a1a2e;
-    --thieptotnghiep-color-light: #ffffff;
-    --thieptotnghiep-color-gray: #c7c7c7;
-    --thieptotnghiep-color-purple: #6a5acd;
-    --thieptotnghiep-color-pink: #ff6b9d;
-    
-    /* Gradients */
-    --thieptotnghiep-gradient-gold: linear-gradient(135deg, #d4af37 0%, #aa8f3b 50%, #d4af37 100%);
-    --thieptotnghiep-gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    --thieptotnghiep-gradient-luxury: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-    --thieptotnghiep-gradient-shine: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
-    
-    /* Typography */
-    --thieptotnghiep-font-primary: 'Montserrat', sans-serif;
-    --thieptotnghiep-font-display: 'Cormorant Garamond', serif;
-    --thieptotnghiep-font-script: 'Great Vibes', cursive;
-    
-    /* Spacing */
-    --thieptotnghiep-spacing-xs: 0.5rem;
-    --thieptotnghiep-spacing-sm: 1rem;
-    --thieptotnghiep-spacing-md: 1.5rem;
-    --thieptotnghiep-spacing-lg: 2rem;
-    --thieptotnghiep-spacing-xl: 3rem;
-    --thieptotnghiep-spacing-xxl: 4rem;
-    
-    /* Shadows */
-    --thieptotnghiep-shadow-sm: 0 2px 10px rgba(0,0,0,0.1);
-    --thieptotnghiep-shadow-md: 0 10px 40px rgba(0,0,0,0.2);
-    --thieptotnghiep-shadow-lg: 0 20px 60px rgba(0,0,0,0.3);
-    --thieptotnghiep-shadow-gold: 0 10px 40px rgba(212,175,55,0.4);
-    
-    /* Transitions */
-    --thieptotnghiep-transition-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --thieptotnghiep-transition-normal: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    --thieptotnghiep-transition-slow: 1s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    /* Border Radius */
-    --thieptotnghiep-radius-sm: 8px;
-    --thieptotnghiep-radius-md: 16px;
-    --thieptotnghiep-radius-lg: 24px;
-    --thieptotnghiep-radius-xl: 32px;
-    --thieptotnghiep-radius-full: 50%;
-}
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    overscroll-behavior-y: none;
-    overscroll-behavior-x: none;
-}
-
-/* ===================================
-   Body & Background
-   =================================== */
-.thieptotnghiep__body {
-    font-family: var(--thieptotnghiep-font-primary);
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: var(--thieptotnghiep-color-dark);
-    position: relative;
-    touch-action: pan-y;
-    overscroll-behavior: none;
-}
-
-.thieptotnghiep__background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.thieptotnghiep__background-layer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-}
-
-.thieptotnghiep__background-layer--1 {
-    background: radial-gradient(circle at 20% 50%, rgba(106, 90, 205, 0.3) 0%, transparent 50%);
-    animation: thieptotnghiep-float 20s ease-in-out infinite;
-}
-
-.thieptotnghiep__background-layer--2 {
-    background: radial-gradient(circle at 80% 50%, rgba(255, 107, 157, 0.3) 0%, transparent 50%);
-    animation: thieptotnghiep-float 25s ease-in-out infinite reverse;
-}
-
-.thieptotnghiep__background-layer--3 {
-    background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.2) 0%, transparent 70%);
-    animation: thieptotnghiep-pulse 15s ease-in-out infinite;
-}
-
-@keyframes thieptotnghiep-float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(50px, 30px) scale(1.1); }
-}
-
-@keyframes thieptotnghiep-pulse {
-    0%, 100% { opacity: 0.2; transform: scale(1); }
-    50% { opacity: 0.4; transform: scale(1.2); }
-}
-
-/* ===================================
-   Particles Background
-   =================================== */
-.thieptotnghiep__particles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-}
-
-/* ===================================
-   Floating Elements
-   =================================== */
-.thieptotnghiep__floating-elements {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.thieptotnghiep__floating-elements-item {
-    position: absolute;
-    font-size: 2rem;
-    opacity: 0.6;
-    animation: thieptotnghiep-float-item 15s ease-in-out infinite;
-}
-
-.thieptotnghiep__floating-elements-item--1 {
-    left: 10%;
-    top: 20%;
-    animation-delay: 0s;
-    animation-duration: 20s;
-}
-
-.thieptotnghiep__floating-elements-item--2 {
-    left: 20%;
-    top: 60%;
-    animation-delay: 2s;
-    animation-duration: 18s;
-}
-
-.thieptotnghiep__floating-elements-item--3 {
-    right: 15%;
-    top: 30%;
-    animation-delay: 4s;
-    animation-duration: 22s;
-}
-
-.thieptotnghiep__floating-elements-item--4 {
-    right: 25%;
-    top: 70%;
-    animation-delay: 1s;
-    animation-duration: 19s;
-}
-
-.thieptotnghiep__floating-elements-item--5 {
-    left: 50%;
-    top: 10%;
-    animation-delay: 3s;
-    animation-duration: 25s;
-}
-
-.thieptotnghiep__floating-elements-item--6 {
-    left: 70%;
-    top: 80%;
-    animation-delay: 5s;
-    animation-duration: 17s;
-}
-
-.thieptotnghiep__floating-elements-item--7 {
-    left: 30%;
-    top: 40%;
-    animation-delay: 6s;
-    animation-duration: 21s;
-}
-
-.thieptotnghiep__floating-elements-item--8 {
-    right: 40%;
-    top: 50%;
-    animation-delay: 7s;
-    animation-duration: 23s;
-}
-
-@keyframes thieptotnghiep-float-item {
-    0%, 100% {
-        transform: translate(0, 0) rotate(0deg) scale(1);
-        opacity: 0.3;
-    }
-    25% {
-        transform: translate(30px, -30px) rotate(90deg) scale(1.2);
-        opacity: 0.6;
-    }
-    50% {
-        transform: translate(-20px, -60px) rotate(180deg) scale(0.8);
-        opacity: 0.4;
-    }
-    75% {
-        transform: translate(40px, -30px) rotate(270deg) scale(1.1);
-        opacity: 0.7;
-    }
-}
-
-/* ===================================
-   Container
-   =================================== */
-.thieptotnghiep__container {
-    /* min-height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--thieptotnghiep-spacing-lg);
-    position: relative;
-    z-index: 10;
-    perspective: 2000px;
-}
-
-/* ===================================
-   Card Wrapper  
-   =================================== */
-.thieptotnghiep__card-wrapper {
-    width: 100%;
-    max-width: 800px;
-    position: relative;
-}
-
-/* ===================================
-   Card
-   =================================== */
-.thieptotnghiep__card {
-    width: 100%;
-    position: relative;
-    animation: thieptotnghiep-card-entrance 1.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-@keyframes thieptotnghiep-card-entrance {
-    0% {
-        opacity: 0;
-        transform: scale(0.5) rotateY(-180deg);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) rotateY(0deg);
-    }
-}
-
-.thieptotnghiep__card-inner {
-    position: relative;
-    width: 100%;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    transition: transform var(--thieptotnghiep-transition-slow);
-}
-
-.thieptotnghiep__card-inner--flipped {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-}
-
-/* ===================================
-   Card Front
-   =================================== */
-.thieptotnghiep__card-front {
-    position: relative;
-    width: 100%;
-    min-height: 600px;
-    background: var(--thieptotnghiep-gradient-dark);
-    border-radius: var(--thieptotnghiep-radius-xl);
-    padding: var(--thieptotnghiep-spacing-xxl) var(--thieptotnghiep-spacing-xl);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    opacity: 1;
-    visibility: visible;
-    transition: transform var(--thieptotnghiep-transition-slow),
-                opacity var(--thieptotnghiep-transition-fast),
-                visibility 0s linear;
-    overflow: hidden;
-    box-shadow: var(--thieptotnghiep-shadow-lg), 
-                0 0 100px rgba(212, 175, 55, 0.3);
-}
-
-.thieptotnghiep__card-front-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.3) 100%);
-    pointer-events: none;
-}
-
-.thieptotnghiep__card-front-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    text-align: center;
-}
-
-/* Card Decorations */
-.thieptotnghiep__card-decoration {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    opacity: 0.3;
-}
-
-.thieptotnghiep__card-decoration--top {
-    top: var(--thieptotnghiep-spacing-lg);
-}
-
-.thieptotnghiep__card-decoration--bottom {
-    bottom: var(--thieptotnghiep-spacing-lg);
-    transform: rotate(180deg);
-}
-
-.thieptotnghiep__card-decoration-svg {
-    width: 100%;
-    height: auto;
-    color: var(--thieptotnghiep-color-primary);
-    filter: drop-shadow(0 0 10px currentColor);
-}
-
-/* Card Logo */
-.thieptotnghiep__card-logo {
-    margin-bottom: var(--thieptotnghiep-spacing-lg);
-    animation: thieptotnghiep-logo-float 3s ease-in-out infinite;
-}
-
-.thieptotnghiep__card-logo-icon {
-    font-size: 4rem;
-    display: inline-block;
-    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
-}
-
-@keyframes thieptotnghiep-logo-float {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(10deg); }
-}
-
-/* Card Header & Title */
-.thieptotnghiep__card-header {
-    margin-bottom: var(--thieptotnghiep-spacing-xl);
-}
-
-.thieptotnghiep__card-title {
-    margin-bottom: var(--thieptotnghiep-spacing-lg);
-}
-
-.thieptotnghiep__card-title-line {
-    display: block;
-    font-family: var(--thieptotnghiep-font-primary);
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--thieptotnghiep-color-gray);
-    margin-bottom: var(--thieptotnghiep-spacing-sm);
-    opacity: 0;
-    animation: thieptotnghiep-fade-slide-in 1s ease forwards;
-}
-
-.thieptotnghiep__card-title-line--top {
-    animation-delay: 0.3s;
-}
-
-.thieptotnghiep__card-title-line--bottom {
-    animation-delay: 0.9s;
-    margin-bottom: 0;
-    margin-top: var(--thieptotnghiep-spacing-sm);
-}
-
-.thieptotnghiep__card-title-main {
-    display: block;
-    font-family: var(--thieptotnghiep-font-display);
-    font-size: 4.5rem;
-    font-weight: 700;
-    background: var(--thieptotnghiep-gradient-gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
-    line-height: 1.2;
-    opacity: 0;
-    animation: thieptotnghiep-title-glow 1s ease 0.6s forwards, 
-               thieptotnghiep-shine 3s linear 1.6s infinite;
-    position: relative;
-}
-
-@keyframes thieptotnghiep-fade-slide-in {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    from {
-        transform: translateY(20px);
-    }
-}
-
-@keyframes thieptotnghiep-title-glow {
-    to {
-        opacity: 1;
-        filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.6));
-    }
-}
-
-@keyframes thieptotnghiep-shine {
-    0% {
-        background-position: -200%;
-    }
-    100% {
-        background-position: 200%;
-    }
-}
-
-/* Card Divider */
-.thieptotnghiep__card-divider {
-    margin: var(--thieptotnghiep-spacing-lg) 0;
-    opacity: 0;
-    animation: thieptotnghiep-fade-in 1s ease 1.2s forwards;
-}
-
-.thieptotnghiep__card-divider-icon {
-    font-size: 1.5rem;
-    color: var(--thieptotnghiep-color-primary);
-    display: inline-block;
-    animation: thieptotnghiep-rotate-pulse 4s ease-in-out infinite;
-    filter: drop-shadow(0 0 10px currentColor);
-}
-
-@keyframes thieptotnghiep-rotate-pulse {
-    0%, 100% { transform: rotate(0deg) scale(1); }
-    50% { transform: rotate(180deg) scale(1.2); }
-}
-
-@keyframes thieptotnghiep-fade-in {
-    to { opacity: 1; }
-}
-
-/* Card Action Button */
-.thieptotnghiep__card-action {
-    opacity: 0;
-    animation: thieptotnghiep-fade-in 1s ease 1.5s forwards;
-}
-
-.thieptotnghiep__card-button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: var(--thieptotnghiep-spacing-sm);
-    padding: var(--thieptotnghiep-spacing-md) var(--thieptotnghiep-spacing-xl);
-    background: var(--thieptotnghiep-gradient-gold);
-    color: var(--thieptotnghiep-color-dark);
-    border: none;
-    border-radius: var(--thieptotnghiep-radius-lg);
-    font-family: var(--thieptotnghiep-font-primary);
-    font-size: 1.1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all var(--thieptotnghiep-transition-normal);
-    box-shadow: var(--thieptotnghiep-shadow-gold);
-}
-
-.thieptotnghiep__card-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-    transition: left 0.5s ease;
-}
-
-.thieptotnghiep__card-button:hover::before {
-    left: 100%;
-}
-
-.thieptotnghiep__card-button:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: var(--thieptotnghiep-shadow-gold), 
-                0 15px 50px rgba(212, 175, 55, 0.6);
-}
-
-.thieptotnghiep__card-button:active {
-    transform: translateY(-2px) scale(1.02);
-}
-
-.thieptotnghiep__card-button-icon {
-    display: inline-flex;
-    width: 24px;
-    height: 24px;
-    transition: transform var(--thieptotnghiep-transition-fast);
-}
-
-.thieptotnghiep__card-button:hover .thieptotnghiep__card-button-icon {
-    transform: translateX(5px);
-}
-
-/* Shine Effect */
-.thieptotnghiep__card-shine {
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: var(--thieptotnghiep-gradient-shine);
-    transform: rotate(45deg);
-    animation: thieptotnghiep-shine-move 6s linear infinite;
-    opacity: 0;
-}
-
-@keyframes thieptotnghiep-shine-move {
-    0% {
-        transform: translateX(-100%) rotate(45deg);
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.2;
-    }
-    100% {
-        transform: translateX(100%) rotate(45deg);
-        opacity: 0;
-    }
-}
-
-/* ===================================
-   Card Back
-   =================================== */
-.thieptotnghiep__card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--thieptotnghiep-gradient-dark);
-    border-radius: var(--thieptotnghiep-radius-xl);
-    padding: var(--thieptotnghiep-spacing-xl);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transform: rotateY(180deg);
-    opacity: 0;
-    visibility: hidden;
-    transition: transform var(--thieptotnghiep-transition-slow),
-                opacity var(--thieptotnghiep-transition-fast),
-                visibility 0s linear;
-    box-shadow: var(--thieptotnghiep-shadow-lg);
-    overflow-y: auto;
-    max-height: 90vh;
-    scroll-behavior: auto;
-    overscroll-behavior: contain;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-gutter: stable both-edges;
-    touch-action: pan-y;
-    pointer-events: none;
-    /* scrollbar-width: none;  */
-}
-
-.thieptotnghiep__card-inner--flipped .thieptotnghiep__card-front {
-    pointer-events: none;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.thieptotnghiep__card-inner--flipped .thieptotnghiep__card-back {
-    pointer-events: auto;
-    opacity: 1;
-    visibility: visible;
-}
-
-.thieptotnghiep__card-back-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.3) 100%);
-    pointer-events: none;
-    z-index: 1;
-    border-radius: inherit
-}
-
-.thieptotnghiep__card-back-content {
-    position: relative;
-    z-index: 2;
-}
-
-/* Avatar Section */
-.thieptotnghiep__card-avatar-section {
-    text-align: center;
-    margin-bottom: var(--thieptotnghiep-spacing-xl);
-    padding-bottom: var(--thieptotnghiep-spacing-xl);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-}
-
-.thieptotnghiep__card-avatar {
-    margin-bottom: var(--thieptotnghiep-spacing-lg);
-    display: flex;
-    justify-content: center;
-}
-
-.thieptotnghiep__card-avatar-wrapper {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    animation: thieptotnghiep-avatar-entrance 1s ease;
-}
-
-@keyframes thieptotnghiep-avatar-entrance {
-    from {
-        opacity: 0;
-        transform: scale(0) rotate(-180deg);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-    }
-}
-
-.thieptotnghiep__card-avatar-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: var(--thieptotnghiep-radius-full);
-    border: 5px solid var(--thieptotnghiep-color-primary);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.4),
-                0 0 60px rgba(212, 175, 55, 0.4);
-    position: relative;
-    z-index: 2;
-}
-
-.thieptotnghiep__card-avatar-ring {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid var(--thieptotnghiep-color-primary);
-    border-radius: var(--thieptotnghiep-radius-full);
-    opacity: 0.5;
-}
-
-.thieptotnghiep__card-avatar-ring--1 {
-    width: 110%;
-    height: 110%;
-    animation: thieptotnghiep-ring-pulse 3s ease-in-out infinite;
-}
-
-.thieptotnghiep__card-avatar-ring--2 {
-    width: 120%;
-    height: 120%;
-    animation: thieptotnghiep-ring-pulse 3s ease-in-out 0.5s infinite;
-}
-
-.thieptotnghiep__card-avatar-ring--3 {
-    width: 130%;
-    height: 130%;
-    animation: thieptotnghiep-ring-pulse 3s ease-in-out 1s infinite;
-}
-
-@keyframes thieptotnghiep-ring-pulse {
-    0%, 100% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1.1);
-        opacity: 0;
-    }
-}
-
-.thieptotnghiep__card-avatar-glow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(212,175,55,0.4) 0%, transparent 70%);
-    border-radius: var(--thieptotnghiep-radius-full);
-    animation: thieptotnghiep-glow-pulse 2s ease-in-out infinite;
-}
-
-@keyframes thieptotnghiep-glow-pulse {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
-}
-
-/* Name Section */
-.thieptotnghiep__card-name-section {
-    animation: thieptotnghiep-fade-slide-up 1s ease 0.3s backwards;
-}
-
-.thieptotnghiep__card-name {
-    font-family: var(--thieptotnghiep-font-display);
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: var(--thieptotnghiep-gradient-gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 5px;
-    filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.5));
-}
-
-.thieptotnghiep__card-age {
-    font-size: 1.1rem;
-    color: var(--thieptotnghiep-color-gray);
-    font-weight: 300;
-}
-
-.thieptotnghiep__card-age-label {
-    display: block;
-    margin-bottom: var(--thieptotnghiep-spacing-xs);
-}
-
-.thieptotnghiep__card-age-number {
-    font-family: var(--thieptotnghiep-font-display);
-    font-size: 3rem;
-    color: var(--thieptotnghiep-color-primary);
-    display: block;
-    margin-top: var(--thieptotnghiep-spacing-xs);
-    filter: drop-shadow(0 0 15px currentColor);
-    animation: thieptotnghiep-number-glow 2s ease-in-out infinite;
-}
-
-@keyframes thieptotnghiep-number-glow {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
-}
-
-@keyframes thieptotnghiep-fade-slide-up {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Details Section */
-.thieptotnghiep__card-details-section {
-    margin-bottom: var(--thieptotnghiep-spacing-xl);
-    padding-bottom: var(--thieptotnghiep-spacing-xl);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-}
-
-.thieptotnghiep__card-details {
-    display: flex;
-    flex-direction: column;
-    gap: var(--thieptotnghiep-spacing-lg);
-}
-
-.thieptotnghiep__card-details-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--thieptotnghiep-spacing-md);
-    padding: var(--thieptotnghiep-spacing-md);
-    background: rgba(212, 175, 55, 0.05);
-    border-left: 3px solid var(--thieptotnghiep-color-primary);
-    border-radius: var(--thieptotnghiep-radius-sm);
-    transition: all var(--thieptotnghiep-transition-fast);
-    animation: thieptotnghiep-fade-slide-left 0.8s ease backwards;
-}
-
-.thieptotnghiep__card-details-item:nth-child(1) { animation-delay: 0.4s; }
-.thieptotnghiep__card-details-item:nth-child(2) { animation-delay: 0.5s; }
-.thieptotnghiep__card-details-item:nth-child(3) { animation-delay: 0.6s; }
-
-.thieptotnghiep__card-details-item:hover {
-    background: rgba(212, 175, 55, 0.1);
-    transform: translateX(5px);
-    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
-}
-
-@keyframes thieptotnghiep-fade-slide-left {
-    from {
-        opacity: 0;
-        transform: translateX(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.thieptotnghiep__card-details-icon {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    color: var(--thieptotnghiep-color-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(212, 175, 55, 0.1);
-    border-radius: var(--thieptotnghiep-radius-sm);
-    padding: var(--thieptotnghiep-spacing-xs);
-}
-
-.thieptotnghiep__card-details-icon svg {
-    width: 24px;
-    height: 24px;
-}
-
-.thieptotnghiep__card-details-content {
-    flex: 1;
-}
-
-.thieptotnghiep__card-details-label {
-    display: block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--thieptotnghiep-color-primary);
-    margin-bottom: var(--thieptotnghiep-spacing-xs);
-}
-
-.thieptotnghiep__card-details-value {
-    display: block;
-    font-size: 1rem;
-    color: #ffffff !important;
-    line-height: 1.6;
-    font-style: normal;
-}
-
-/* Message Section */
-.thieptotnghiep__card-message-section {
-    margin-bottom: var(--thieptotnghiep-spacing-xl);
-    padding-bottom: var(--thieptotnghiep-spacing-xl);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
-    animation: thieptotnghiep-fade-in 1s ease 0.7s backwards;
-}
-
-.thieptotnghiep__card-message-wrapper {
-    text-align: center;
-    position: relative;
-}
-
-.thieptotnghiep__card-message-icon {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto var(--thieptotnghiep-spacing-md);
-    color: var(--thieptotnghiep-color-primary);
-    animation: thieptotnghiep-heartbeat 2s ease-in-out infinite;
-}
-
-.thieptotnghiep__card-message-icon svg {
-    width: 100%;
-    height: 100%;
-    filter: drop-shadow(0 0 20px currentColor);
-}
-
-@keyframes thieptotnghiep-heartbeat {
-    0%, 100% { transform: scale(1); }
-    10%, 30% { transform: scale(1.1); }
-    20%, 40% { transform: scale(1); }
-}
-
-.thieptotnghiep__card-message {
-    font-family: var(--thieptotnghiep-font-script);
-    font-size: 1.4rem;
-    color: var(--thieptotnghiep-color-gray);
-    line-height: 1.8;
-    font-style: italic;
-    position: relative;
-    padding: var(--thieptotnghiep-spacing-lg);
-    background: rgba(212, 175, 55, 0.05);
-    border-radius: var(--thieptotnghiep-radius-md);
-}
-
-.thieptotnghiep__card-message::before,
-.thieptotnghiep__card-message::after {
-    content: '"';
-    font-size: 3rem;
-    color: var(--thieptotnghiep-color-primary);
-    opacity: 0.3;
-    font-family: var(--thieptotnghiep-font-display);
-    position: absolute;
-}
-
-.thieptotnghiep__card-message::before {
-    top: 0;
-    left: 10px;
-}
-
-.thieptotnghiep__card-message::after {
-    bottom: -10px;
-    right: 10px;
-}
-
-.thieptotnghiep__card-message-text {
-    position: relative;
-    z-index: 2;
-}
-
-/* Countdown Section */
-.thieptotnghiep__card-countdown-section {
-    margin-bottom: var(--thieptotnghiep-spacing-xl);
-    animation: thieptotnghiep-fade-in 1s ease 0.8s backwards;
-}
-
-.thieptotnghiep__card-countdown-title {
-    font-family: var(--thieptotnghiep-font-display);
-    font-size: 1.8rem;
-    text-align: center;
-    color: var(--thieptotnghiep-color-primary);
-    margin-bottom: var(--thieptotnghiep-spacing-lg);
-    letter-spacing: 2px;
-}
-
-.thieptotnghiep__countdown {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--thieptotnghiep-spacing-md);
-}
-
-.thieptotnghiep__countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--thieptotnghiep-spacing-sm);
-}
-
-.thieptotnghiep__countdown-circle {
-    position: relative;
-    width: 100px;
-    height: 100px;
-}
-
-.thieptotnghiep__countdown-circle-svg {
-    width: 100%;
-    height: 100%;
-    transform: rotate(-90deg);
-}
-
-.thieptotnghiep__countdown-circle-bg {
-    fill: none;
-    stroke: rgba(212, 175, 55, 0.1);
-    stroke-width: 8;
-}
-
-.thieptotnghiep__countdown-circle-progress {
-    fill: none;
-    stroke: var(--thieptotnghiep-color-primary);
-    stroke-width: 8;
-    stroke-dasharray: 283;
-    stroke-dashoffset: 283;
-    stroke-linecap: round;
-    animation: thieptotnghiep-countdown-rotate 2s ease-in-out infinite;
-    filter: drop-shadow(0 0 10px currentColor);
-}
-
-@keyframes thieptotnghiep-countdown-rotate {
-    0%, 100% { stroke-dashoffset: 283; }
-    50% { stroke-dashoffset: 70; }
-}
-
-.thieptotnghiep__countdown-value {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--thieptotnghiep-font-display);
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--thieptotnghiep-color-light);
-}
-
-.thieptotnghiep__countdown-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--thieptotnghiep-color-gray);
-}
-
-/* Footer */
-.thieptotnghiep__card-footer {
-    text-align: center;
-    padding-top: var(--thieptotnghiep-spacing-lg);
-    animation: thieptotnghiep-fade-in 1s ease 0.9s backwards;
-}
-
-.thieptotnghiep__card-footer-divider {
-    width: 100px;
-    height: 2px;
-    background: var(--thieptotnghiep-gradient-gold);
-    margin: 0 auto var(--thieptotnghiep-spacing-lg);
-    border-radius: 2px;
-}
-
-.thieptotnghiep__card-footer-text {
-    font-family: var(--thieptotnghiep-font-script);
-    font-size: 1.5rem;
-    color: var(--thieptotnghiep-color-primary);
-    margin-bottom: var(--thieptotnghiep-spacing-lg);
-}
-
-.thieptotnghiep__card-close {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--thieptotnghiep-spacing-sm);
-    padding: var(--thieptotnghiep-spacing-sm) var(--thieptotnghiep-spacing-lg);
-    background: rgba(212, 175, 55, 0.1);
-    border: 2px solid var(--thieptotnghiep-color-primary);
-    border-radius: var(--thieptotnghiep-radius-lg);
-    color: var(--thieptotnghiep-color-light);
-    font-family: var(--thieptotnghiep-font-primary);
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all var(--thieptotnghiep-transition-fast);
-}
-
-.thieptotnghiep__card-close:hover {
-    background: var(--thieptotnghiep-color-primary);
-    color: var(--thieptotnghiep-color-dark);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
-}
-
-.thieptotnghiep__card-close-icon {
-    font-size: 1.2rem;
-    transition: transform var(--thieptotnghiep-transition-fast);
-}
-
-.thieptotnghiep__card-close:hover .thieptotnghiep__card-close-icon {
-    transform: rotate(90deg);
-}
-
-/* Decorative Corners */
-.thieptotnghiep__card-corner {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--thieptotnghiep-color-primary);
-    opacity: 0.5;
-    z-index: 10;
-}
-
-.thieptotnghiep__card-corner--tl {
-    top: 20px;
-    left: 20px;
-    border-right: none;
-    border-bottom: none;
-    border-radius: var(--thieptotnghiep-radius-sm) 0 0 0;
-}
-
-.thieptotnghiep__card-corner--tr {
-    top: 20px;
-    right: 20px;
-    border-left: none;
-    border-bottom: none;
-    border-radius: 0 var(--thieptotnghiep-radius-sm) 0 0;
-}
-
-.thieptotnghiep__card-corner--bl {
-    bottom: 20px;
-    left: 20px;
-    border-right: none;
-    border-top: none;
-    border-radius: 0 0 0 var(--thieptotnghiep-radius-sm);
-}
-
-.thieptotnghiep__card-corner--br {
-    bottom: 20px;
-    right: 20px;
-    border-left: none;
-    border-top: none;
-    border-radius: 0 0 var(--thieptotnghiep-radius-sm) 0;
-}
-
-/* ===================================
-   Music Control
-   =================================== */
-/* ... (tiếp tục từ phần trước) */
-
-/* ===================================
-   Music Control
-   =================================== */
-.thieptotnghiep__music {
-    position: fixed;
-    bottom: var(--thieptotnghiep-spacing-lg);
-    right: var(--thieptotnghiep-spacing-lg);
-    z-index: 1000;
-}
-
-.thieptotnghiep__music-button {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    background: var(--thieptotnghiep-gradient-gold);
-    border: none;
-    border-radius: var(--thieptotnghiep-radius-full);
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    box-shadow: var(--thieptotnghiep-shadow-gold);
-    transition: all var(--thieptotnghiep-transition-fast);
-    overflow: hidden;
-}
-
-.thieptotnghiep__music-button::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--thieptotnghiep-gradient-shine);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.thieptotnghiep__music-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
-}
-
-.thieptotnghiep__music-button:hover::before {
-    opacity: 1;
-}
-
-.thieptotnghiep__music-icon {
-    width: 30px;
-    height: 30px;
-    color: var(--thieptotnghiep-color-dark);
-    position: relative;
-    z-index: 2;
-}
-
-.thieptotnghiep__music-wave {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 3px;
-    height: 15px;
-    position: relative;
-    z-index: 2;
-}
-
-.thieptotnghiep__music-wave-bar {
-    width: 3px;
-    background: var(--thieptotnghiep-color-dark);
-    border-radius: 2px;
-    animation: thieptotnghiep-wave 1s ease-in-out infinite;
-}
-
-.thieptotnghiep__music-wave-bar:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.thieptotnghiep__music-wave-bar:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.thieptotnghiep__music-wave-bar:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-@keyframes thieptotnghiep-wave {
-    0%, 100% {
-        height: 5px;
-    }
-    50% {
-        height: 15px;
-    }
-}
-
-.thieptotnghiep__music-button--paused .thieptotnghiep__music-wave-bar {
-    animation: none;
-    height: 5px;
-}
-
-/* ===================================
-   Canvas
-   =================================== */
-.thieptotnghiep__canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    pointer-events: none;
-}
-
-/* ===================================
-   Responsive Design
-   =================================== */
-@media (max-width: 1024px) {
-    .thieptotnghiep__card-title-main {
-        font-size: 3.5rem;
-    }
-    
-    .thieptotnghiep__card-avatar-wrapper {
-        width: 180px;
-        height: 180px;
-    }
-}
-
-@media (max-width: 768px) {
-    .thieptotnghiep__container {
-        padding: var(--thieptotnghiep-spacing-md);
-    }
-    
-    .thieptotnghiep__card-front {
-        min-height: 500px;
-        padding: var(--thieptotnghiep-spacing-xl) var(--thieptotnghiep-spacing-lg);
-    }
-    
-    .thieptotnghiep__card-back {
-        padding: var(--thieptotnghiep-spacing-lg);
-    }
-    
-    .thieptotnghiep__card-title-main {
-        font-size: 2.8rem;
-    }
-    
-    .thieptotnghiep__card-logo-icon {
-        font-size: 3rem;
-    }
-    
-    .thieptotnghiep__card-avatar-wrapper {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .thieptotnghiep__card-name {
-        font-size: 2rem;
-    }
-    
-    .thieptotnghiep__card-age-number {
-        font-size: 2.5rem;
-    }
-    
-    .thieptotnghiep__countdown {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--thieptotnghiep-spacing-sm);
-    }
-    
-    .thieptotnghiep__countdown-circle {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .thieptotnghiep__countdown-value {
-        font-size: 1.5rem;
-    }
-    
-    .thieptotnghiep__floating-elements-item {
-        font-size: 1.5rem;
-    }
-    
-    .thieptotnghiep__music {
-        bottom: var(--thieptotnghiep-spacing-md);
-        right: var(--thieptotnghiep-spacing-md);
-    }
-    
-    .thieptotnghiep__music-button {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .thieptotnghiep__music-icon {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    .thieptotnghiep__card-avatar-section {
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-    }
-    .thieptotnghiep__card-age-label{
-        font-size: 0.75rem;
-    }
-    .thieptotnghiep__container {
-        padding: var(--thieptotnghiep-spacing-sm);
-    }
-    
-    .thieptotnghiep__card-front {
-        min-height: 450px;
-        padding: var(--thieptotnghiep-spacing-lg) var(--thieptotnghiep-spacing-md);
-    }
-    
-    .thieptotnghiep__card-back {
-        padding: var(--thieptotnghiep-spacing-md);
-    }
-    
-    .thieptotnghiep__card-title-main {
-        font-size: 2.2rem;
-    }
-    
-    .thieptotnghiep__card-title-line {
-        font-size: 0.85rem;
-        letter-spacing: 2px;
-    }
-    
-    .thieptotnghiep__card-button {
-        padding: var(--thieptotnghiep-spacing-sm) var(--thieptotnghiep-spacing-lg);
-        font-size: 1rem;
-    }
-    
-    .thieptotnghiep__card-avatar-wrapper {
-        width: 120px;
-        height: 120px;
-    }
-
-    .thieptotnghiep__card-avatar {
-        margin-bottom: 15px;
-    }
-    
-    .thieptotnghiep__card-name {
-        font-size: 2rem;
-    }
-    
-    .thieptotnghiep__card-age-number {
-        font-size: 1.5rem;
-    }
-    
-    .thieptotnghiep__card-message {
-        font-size: 1.1rem;
-        padding: var(--thieptotnghiep-spacing-md);
-    }
-    
-    .thieptotnghiep__card-countdown-title {
-        font-size: 1.4rem;
-    }
-    
-    .thieptotnghiep__countdown-circle {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .thieptotnghiep__countdown-value {
-        font-size: 1.3rem;
-    }
-    
-    .thieptotnghiep__countdown-label {
-        font-size: 0.8rem;
-    }
-    
-    .thieptotnghiep__card-details-item {
-        padding: var(--thieptotnghiep-spacing-sm);
-        gap: var(--thieptotnghiep-spacing-sm);
-    }
-    
-    .thieptotnghiep__card-details-icon {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .thieptotnghiep__card-details-value {
-        font-size: 0.9rem;
-    }
-    
-    .thieptotnghiep__music-button {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .thieptotnghiep__music-icon {
-        width: 20px;
-        height: 20px;
-    }
-}
-
-/* ===================================
-   Print Styles
-   =================================== */
-@media print {
-    .thieptotnghiep__background,
-    .thieptotnghiep__particles,
-    .thieptotnghiep__floating-elements,
-    .thieptotnghiep__music,
-    .thieptotnghiep__canvas,
-    .thieptotnghiep__card-button,
-    .thieptotnghiep__card-close,
-    .thieptotnghiep__card-shine {
-        display: none !important;
-    }
-    
-    .thieptotnghiep__card-inner {
-        transform: none !important;
-    }
-    
-    .thieptotnghiep__card-back {
-        position: static;
-        transform: none;
-    }
-}
-
-/* ===================================
-   Accessibility
-   =================================== */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-.thieptotnghiep__card-button:focus-visible,
-.thieptotnghiep__card-close:focus-visible,
-.thieptotnghiep__music-button:focus-visible {
-    outline: 3px solid var(--thieptotnghiep-color-primary);
-    outline-offset: 4px;
-}
-
-/* ===================================
-   High Contrast Mode
-   =================================== */
-@media (prefers-contrast: high) {
-    .thieptotnghiep__card-front,
-    .thieptotnghiep__card-back {
-        border: 3px solid currentColor;
-    }
-}
-
-/* ===================================
-   Dark Mode (Optional Enhancement)
-   =================================== */
-@media (prefers-color-scheme: light) {
-    :root {
-        --thieptotnghiep-color-dark: #f8f9fa;
-        --thieptotnghiep-color-light: #1a1a2e;
-    }
-}
-/* ===================================
-   Additional Styles & Utilities
-   =================================== */
-
-/* Skip Link for Accessibility */
-.thieptotnghiep__skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: var(--thieptotnghiep-color-dark);
-    color: var(--thieptotnghiep-color-light);
-    padding: var(--thieptotnghiep-spacing-sm);
-    text-decoration: none;
-    z-index: 100000;
-}
-
-.thieptotnghiep__skip-link:focus {
-    top: 0;
-}
-
-/* Screen Reader Only */
-.thieptotnghiep__sr-only {
-    position: absolute;
-    left: -10000px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
-
-/* Share Button */
-.thieptotnghiep__share-button {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--thieptotnghiep-spacing-xs);
-    padding: var(--thieptotnghiep-spacing-sm) var(--thieptotnghiep-spacing-md);
-    background: var(--thieptotnghiep-color-light);
-    color: var(--thieptotnghiep-color-primary);
-    border: 2px solid var(--thieptotnghiep-color-primary);
-    border-radius: var(--thieptotnghiep-radius-md);
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all var(--thieptotnghiep-transition-normal);
-    margin-top: var(--thieptotnghiep-spacing-md);
-}
-
-.thieptotnghiep__share-button:hover {
-    background: var(--thieptotnghiep-color-primary);
-    color: var(--thieptotnghiep-color-light);
-    transform: translateY(-2px);
-}
-
-.thieptotnghiep__share-icon {
-    font-size: 1.2rem;
-}
-
-.thieptotnghiep__card-share-section {
-    text-align: center;
-    margin-bottom: var(--thieptotnghiep-spacing-xl);
-}
-
-.thieptotnghiep__share-link {
-    display: block;
-    margin-top: var(--thieptotnghiep-spacing-sm);
-    font-size: 0.9rem;
-    color: var(--thieptotnghiep-color-gray);
-    text-decoration: underline;
-    word-break: break-word;
-}
-
-.thieptotnghiep__share-link:hover {
-    color: var(--thieptotnghiep-color-primary);
-}
-
-/* Scroll Animations */
-.thieptotnghiep__animate-in {
-    animation: thieptotnghiep-slide-up 0.6s ease forwards;
-}
-
-/* Dark Mode Support (Optional) */
-.thieptotnghiep__dark-mode {
-    --thieptotnghiep-color-bg: #1a1a2e;
-    --thieptotnghiep-color-dark: #eee;
-    --thieptotnghiep-color-light: #0f3460;
-}
-
-.thieptotnghiep__dark-mode .thieptotnghiep__card {
-    background: #16213e;
-    color: #eee;
-}
-
-/* Loading States */
-.thieptotnghiep__loading-state {
-    opacity: 0.5;
-    pointer-events: none;
-    position: relative;
-}
-
-.thieptotnghiep__loading-state::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30px;
-    height: 30px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    border-top-color: var(--thieptotnghiep-color-primary);
-    border-radius: 50%;
-    animation: thieptotnghiep-spin 1s linear infinite;
-}
-
-/* Focus Visible (Better Accessibility) */
-.thieptotnghiep__card-button:focus-visible,
-.thieptotnghiep__rsvp-button:focus-visible,
-.thieptotnghiep__music-toggle:focus-visible {
-    outline: 3px solid var(--thieptotnghiep-color-primary);
-    outline-offset: 3px;
-}
-
-/* High Contrast Mode Support */
-@media (prefers-contrast: high) {
-    .thieptotnghiep__card {
-        border: 3px solid currentColor;
-    }
-    
-    .thieptotnghiep__card-button,
-    .thieptotnghiep__rsvp-button {
-        border: 2px solid currentColor;
-    }
-}
-
-/* Reduced Transparency Mode */
-@media (prefers-reduced-transparency: reduce) {
-    .thieptotnghiep__background-gradient,
-    .thieptotnghiep__balloons-item {
-        opacity: 1 !important;
-    }
-}
-
-/* Landscape Mobile Optimization */
-@media (max-height: 500px) and (orientation: landscape) {
-    .thieptotnghiep__card-avatar-wrapper {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .thieptotnghiep__card-title-main {
-        font-size: 1.8rem;
-    }
-    
-    .thieptotnghiep__card-front,
-    .thieptotnghiep__card-inner {
-        padding: var(--thieptotnghiep-spacing-sm);
-    }
-}
-
-/* Ultra-wide Screen Support */
-@media (min-width: 1920px) {
-    .thieptotnghiep__card {
-        max-width: 800px;
-    }
-    
-    .thieptotnghiep__card-title-main {
-        font-size: 4rem;
-    }
-}
-</style>
-<body class="thieptotnghiep__body">
-    
+  <body class="thieptotnghiep__body">
     <!-- Particles Background -->
     <div class="thieptotnghiep__particles" id="particles"></div>
-    
+
     <!-- Animated Background -->
     <div class="thieptotnghiep__background">
-        <div class="thieptotnghiep__background-layer thieptotnghiep__background-layer--1"></div>
-        <div class="thieptotnghiep__background-layer thieptotnghiep__background-layer--2"></div>
-        <div class="thieptotnghiep__background-layer thieptotnghiep__background-layer--3"></div>
+      <div
+        class="thieptotnghiep__background-layer thieptotnghiep__background-layer--1"
+      ></div>
+      <div
+        class="thieptotnghiep__background-layer thieptotnghiep__background-layer--2"
+      ></div>
+      <div
+        class="thieptotnghiep__background-layer thieptotnghiep__background-layer--3"
+      ></div>
     </div>
 
     <!-- Main Container -->
     <main class="thieptotnghiep__container">
-        
-        <!-- Floating Elements -->
-        <div class="thieptotnghiep__floating-elements">
-            <span class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--1">🎓</span>
-            <span class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--2">📜</span>
-            <span class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--3">⭐</span>
-            <span class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--4">💫</span>
-            <span class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--5">🎉</span>
-            <span class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--6">🎓</span>
-            <span class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--7">📚</span>
-            <span class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--8">⭐</span>
-        </div>
+      <!-- Floating Elements -->
+      <div class="thieptotnghiep__floating-elements">
+        <span
+          class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--1"
+          >🎓</span
+        >
+        <span
+          class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--2"
+          >📜</span
+        >
+        <span
+          class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--3"
+          >⭐</span
+        >
+        <span
+          class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--4"
+          >💫</span
+        >
+        <span
+          class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--5"
+          >🎉</span
+        >
+        <span
+          class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--6"
+          >🎓</span
+        >
+        <span
+          class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--7"
+          >📚</span
+        >
+        <span
+          class="thieptotnghiep__floating-elements-item thieptotnghiep__floating-elements-item--8"
+          >⭐</span
+        >
+      </div>
 
-        <!-- Card Wrapper -->
-        <article class="thieptotnghiep__card-wrapper" itemscope itemtype="https://schema.org/Event">
-            
-            <!-- Card -->
-            <div class="thieptotnghiep__card" id="card">
-                
-                <!-- Card Inner -->
-                <div class="thieptotnghiep__card-inner">
-                    
-                    <!-- Card Front -->
-                    <div class="thieptotnghiep__card-front">
-                        <div class="thieptotnghiep__card-front-overlay"></div>
-                        
-                        <!-- Decorative Elements -->
-                        <div class="thieptotnghiep__card-decoration thieptotnghiep__card-decoration--top">
-                            <svg class="thieptotnghiep__card-decoration-svg" viewBox="0 0 200 50">
-                                <path d="M0,25 Q50,0 100,25 T200,25" fill="none" stroke="currentColor" stroke-width="1"/>
-                            </svg>
-                        </div>
-                        
-                        <div class="thieptotnghiep__card-front-content">
-                            <header class="thieptotnghiep__card-header">
-                                <div class="thieptotnghiep__card-logo">
-                                    <span class="thieptotnghiep__card-logo-icon">🎓</span>
-                                </div>
-                                
-                                <h1 class="thieptotnghiep__card-title">
-                                    <span class="thieptotnghiep__card-title-line thieptotnghiep__card-title-line--top">Trường&nbsp;Đại&nbsp;học Khoa&nbsp;học&nbsp;Tự&nbsp;nhiên</span>
-                                    <span class="thieptotnghiep__card-title-main">Graduation Ceremony</span>
-                                    <span class="thieptotnghiep__card-title-line thieptotnghiep__card-title-line--bottom">Bùi Thiên Bảo</span>
-                                </h1>
-                                
-                                <div class="thieptotnghiep__card-divider">
-                                    <span class="thieptotnghiep__card-divider-icon">❖</span>
-                                </div>
-                            </header>
-                            
-                            <div class="thieptotnghiep__card-action">
-                                <button class="thieptotnghiep__card-button" id="openCard" aria-label="Mở thiệp để xem chi tiết">
-                                    <span class="thieptotnghiep__card-button-text">Mở Thiệp Mời</span>
-                                    <span class="thieptotnghiep__card-button-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- Decorative Elements -->
-                        <div class="thieptotnghiep__card-decoration thieptotnghiep__card-decoration--bottom">
-                            <svg class="thieptotnghiep__card-decoration-svg" viewBox="0 0 200 50">
-                                <path d="M0,25 Q50,50 100,25 T200,25" fill="none" stroke="currentColor" stroke-width="1"/>
-                            </svg>
-                        </div>
-                        
-                        <!-- Shine Effect -->
-                        <div class="thieptotnghiep__card-shine"></div>
-                    </div>
-                    
-                    <!-- Card Back -->
-                    <div class="thieptotnghiep__card-back">
-                        <div class="thieptotnghiep__card-back-overlay"></div>
-                        
-                        <div class="thieptotnghiep__card-back-content">
-                            
-                            <!-- Avatar Section -->
-                            <section class="thieptotnghiep__card-avatar-section">
-                                <div class="thieptotnghiep__card-avatar">
-                                    <div class="thieptotnghiep__card-avatar-wrapper">
-                                        <div class="thieptotnghiep__card-avatar-ring thieptotnghiep__card-avatar-ring--1"></div>
-                                        <div class="thieptotnghiep__card-avatar-ring thieptotnghiep__card-avatar-ring--2"></div>
-                                        <div class="thieptotnghiep__card-avatar-ring thieptotnghiep__card-avatar-ring--3"></div>
-                                        <img data-field="avatar" src="https://i.pravatar.cc/300?img=12" 
-                                            alt="Ảnh đại diện người tốt nghiệp" 
-                                            class="thieptotnghiep__card-avatar-image"
-                                            id="guestAvatar"
-                                            itemprop="image">
-                                        <div class="thieptotnghiep__card-avatar-glow"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="thieptotnghiep__card-name-section">
-                                    <h2 class="thieptotnghiep__card-name" itemprop="organizer">
-                                        <span class="thieptotnghiep__card-name-text" id="guestName" data-field="guest-name">Nguyễn Văn A</span>
-                                    </h2>
-                                    <p class="thieptotnghiep__card-age">
-                                        <span class="thieptotnghiep__card-age-label" style="color: #fff;">aka</span>
-                                        <strong class="thieptotnghiep__card-age-number" id="guestAge" style="color: #fff;">Thân mời</strong>
-                                    </p>
-                                </div>
-                            </section>
-                            
-                            <!-- Details Section -->
-                            <section class="thieptotnghiep__card-details-section">
-                                <div class="thieptotnghiep__card-details">
-                                    
-                                    <div class="thieptotnghiep__card-details-item">
-                                        <div class="thieptotnghiep__card-details-icon">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                                <line x1="16" y1="2" x2="16" y2="6"></line>
-                                                <line x1="8" y1="2" x2="8" y2="6"></line>
-                                                <line x1="3" y1="10" x2="21" y2="10"></line>
-                                            </svg>
-                                        </div>
-                                        <div class="thieptotnghiep__card-details-content">
-                                            <span class="thieptotnghiep__card-details-label">Ngày</span>
-                                            <time class="thieptotnghiep__card-details-value" 
-                                                  datetime="2025-12-13" 
-                                                  itemprop="startDate"
-                                                  id="eventDateDisplay" data-field="date-display" style="color: #fff;">
-                                                Thứ Bảy, 13 tháng 12, 2025
-                                            </time>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="thieptotnghiep__card-details-item">
-                                        <div class="thieptotnghiep__card-details-icon">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <circle cx="12" cy="12" r="10"></circle>
-                                                <polyline points="12 6 12 12 16 14"></polyline>
-                                            </svg>
-                                        </div>
-                                        <div class="thieptotnghiep__card-details-content">
-                                            <span class="thieptotnghiep__card-details-label">Thời gian</span>
-                                            <span class="thieptotnghiep__card-details-value" id="eventTimeRange" data-field="time" style="color: #fff;">16:00</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="thieptotnghiep__card-details-item">
-                                        <div class="thieptotnghiep__card-details-icon">
-                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                                <circle cx="12" cy="10" r="3"></circle>
-                                            </svg>
-                                        </div>
-                                        <div class="thieptotnghiep__card-details-content">
-                                            <span class="thieptotnghiep__card-details-label">Địa điểm</span>
-                                            <address class="thieptotnghiep__card-details-value" itemprop="location" id="eventLocation"  data-field="location" style="color: #fff;">
-                                                Trường Đại học Khoa học Tự nhiên<br>
-                                                227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh<br>
-                                            </address>
-                                            <a style="color: #fff; padding: 10px;background: #aa8f3b;border-radius: 20px;font-size: 11px; text-decoration: none; margin-top: 10px; display: inline-block;" href="https://maps.app.goo.gl/qXFGELW6MQFPKYWN9" target="_blank" rel="noopener noreferrer">Xem google maps</a>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </section>
-                            
-                            <!-- Message Section -->
-                            <section class="thieptotnghiep__card-message-section">
-                                <div class="thieptotnghiep__card-message-wrapper">
-                                    <div class="thieptotnghiep__card-message-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                                        </svg>
-                                    </div>
-                                    <blockquote class="thieptotnghiep__card-message" itemprop="description">
-                                        <p class="thieptotnghiep__card-message-text" id="guestMessage" data-field="message" style="color: #fff;">
-                                            "yooooo wassupppp anh em"
-                                        </p>
-                                    </blockquote>
-                                </div>
-                            </section>
+      <!-- Card Wrapper -->
+      <article
+        class="thieptotnghiep__card-wrapper"
+        itemscope
+        itemtype="https://schema.org/Event"
+      >
+        <!-- Card -->
+        <div class="thieptotnghiep__card" id="card">
+          <!-- Card Inner -->
+          <div class="thieptotnghiep__card-inner">
+            <!-- Card Front -->
+            <div class="thieptotnghiep__card-front">
+              <div class="thieptotnghiep__card-front-overlay"></div>
 
-                            <!-- Share Section -->
-                            <section class="thieptotnghiep__card-share-section" id="shareSection" hidden>
-                                <button type="button" class="thieptotnghiep__share-button" id="shareButton">
-                                    <span class="thieptotnghiep__share-icon">🔗</span>
-                                    <span id="shareButtonLabel">Sao chép liên kết</span>
-                                </button>
-                                <a class="thieptotnghiep__share-link" id="shareLink" href="#" target="_blank" rel="noopener noreferrer">
-                                    Đang tạo liên kết...
-                                </a>
-                            </section>
-                            
-                            <!-- Countdown Section -->
-                            <section class="thieptotnghiep__card-countdown-section">
-                                <h3 class="thieptotnghiep__card-countdown-title">Đếm Ngược Đến Lễ Tốt Nghiệp</h3>
-                                <div class="thieptotnghiep__countdown" id="countdown">
-                                    <div class="thieptotnghiep__countdown-item">
-                                        <div class="thieptotnghiep__countdown-circle">
-                                            <svg class="thieptotnghiep__countdown-circle-svg" viewBox="0 0 100 100">
-                                                <circle class="thieptotnghiep__countdown-circle-bg" cx="50" cy="50" r="45"></circle>
-                                                <circle class="thieptotnghiep__countdown-circle-progress" cx="50" cy="50" r="45"></circle>
-                                            </svg>
-                                            <span class="thieptotnghiep__countdown-value" id="days" style="color: #fff;">00</span>
-                                        </div>
-                                        <span class="thieptotnghiep__countdown-label" style="color: #fff;">Ngày</span>
-                                    </div>
-                                    
-                                    <div class="thieptotnghiep__countdown-item">
-                                        <div class="thieptotnghiep__countdown-circle">
-                                            <svg class="thieptotnghiep__countdown-circle-svg" viewBox="0 0 100 100">
-                                                <circle class="thieptotnghiep__countdown-circle-bg" cx="50" cy="50" r="45"></circle>
-                                                <circle class="thieptotnghiep__countdown-circle-progress" cx="50" cy="50" r="45"></circle>
-                                            </svg>
-                                            <span class="thieptotnghiep__countdown-value" id="hours" style="color: #fff;">00</span>
-                                        </div>
-                                        <span class="thieptotnghiep__countdown-label" style="color: #fff;">Giờ</span>
-                                    </div>
-                                    
-                                    <div class="thieptotnghiep__countdown-item">
-                                        <div class="thieptotnghiep__countdown-circle">
-                                            <svg class="thieptotnghiep__countdown-circle-svg" viewBox="0 0 100 100">
-                                                <circle class="thieptotnghiep__countdown-circle-bg" cx="50" cy="50" r="45"></circle>
-                                                <circle class="thieptotnghiep__countdown-circle-progress" cx="50" cy="50" r="45"></circle>
-                                            </svg>
-                                            <span class="thieptotnghiep__countdown-value" id="minutes" style="color: #fff;">00</span>
-                                        </div>
-                                        <span class="thieptotnghiep__countdown-label"style="color: #fff;" >Phút</span>
-                                    </div>
-                                    
-                                    <div class="thieptotnghiep__countdown-item">
-                                        <div class="thieptotnghiep__countdown-circle">
-                                            <svg class="thieptotnghiep__countdown-circle-svg" viewBox="0 0 100 100">
-                                                <circle class="thieptotnghiep__countdown-circle-bg" cx="50" cy="50" r="45"></circle>
-                                                <circle class="thieptotnghiep__countdown-circle-progress" cx="50" cy="50" r="45"></circle>
-                                            </svg>
-                                            <span class="thieptotnghiep__countdown-value" id="seconds" style="color: #fff;">00</span>
-                                        </div>
-                                        <span class="thieptotnghiep__countdown-label" style="color: #fff;">Giây</span>
-                                    </div>
-                                </div>
-                            </section>
-                            
-                            <!-- Footer -->
-                            <footer class="thieptotnghiep__card-footer">
-                                <div class="thieptotnghiep__card-footer-divider"></div>
-                                <p class="thieptotnghiep__card-footer-text">
-                                    Rất mong được gặp bạn! 🎊
-                                </p>
-                                <button class="thieptotnghiep__card-close" id="closeCard" aria-label="Đóng thiệp">
-                                    <span class="thieptotnghiep__card-close-icon">✕</span>
-                                    <span class="thieptotnghiep__card-close-text" style="color: #fff;">Đóng thiệp</span>
-                                </button>
-                            </footer>
-                            
-                        </div>
-                        
-                        <!-- Decorative Corners -->
-                        <div class="thieptotnghiep__card-corner thieptotnghiep__card-corner--tl"></div>
-                        <div class="thieptotnghiep__card-corner thieptotnghiep__card-corner--tr"></div>
-                        <div class="thieptotnghiep__card-corner thieptotnghiep__card-corner--bl"></div>
-                        <div class="thieptotnghiep__card-corner thieptotnghiep__card-corner--br"></div>
-                    </div>
-                    
+              <!-- Decorative Elements -->
+              <div
+                class="thieptotnghiep__card-decoration thieptotnghiep__card-decoration--top"
+              >
+                <svg
+                  class="thieptotnghiep__card-decoration-svg"
+                  viewBox="0 0 200 50"
+                >
+                  <path
+                    d="M0,25 Q50,0 100,25 T200,25"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  />
+                </svg>
+              </div>
+
+              <div class="thieptotnghiep__card-front-content">
+                <header class="thieptotnghiep__card-header">
+                  <div class="thieptotnghiep__card-logo">
+                    <span class="thieptotnghiep__card-logo-icon">🎓</span>
+                  </div>
+
+                  <h1 class="thieptotnghiep__card-title">
+                    <span
+                      class="thieptotnghiep__card-title-line thieptotnghiep__card-title-line--top"
+                      >Trường&nbsp;Đại&nbsp;học
+                      Khoa&nbsp;học&nbsp;Tự&nbsp;nhiên</span
+                    >
+                    <span class="thieptotnghiep__card-title-main"
+                      >Graduation Ceremony</span
+                    >
+                    <span
+                      class="thieptotnghiep__card-title-line thieptotnghiep__card-title-line--bottom"
+                      >Bùi Thiên Bảo</span
+                    >
+                  </h1>
+
+                  <div class="thieptotnghiep__card-divider">
+                    <span class="thieptotnghiep__card-divider-icon">❖</span>
+                  </div>
+                </header>
+
+                <div class="thieptotnghiep__card-action">
+                  <button
+                    class="thieptotnghiep__card-button"
+                    id="openCard"
+                    aria-label="Mở thiệp để xem chi tiết"
+                  >
+                    <span class="thieptotnghiep__card-button-text"
+                      >Mở Thiệp Mời</span
+                    >
+                    <span class="thieptotnghiep__card-button-icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    </span>
+                  </button>
                 </div>
+              </div>
+
+              <!-- Decorative Elements -->
+              <div
+                class="thieptotnghiep__card-decoration thieptotnghiep__card-decoration--bottom"
+              >
+                <svg
+                  class="thieptotnghiep__card-decoration-svg"
+                  viewBox="0 0 200 50"
+                >
+                  <path
+                    d="M0,25 Q50,50 100,25 T200,25"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1"
+                  />
+                </svg>
+              </div>
+
+              <!-- Shine Effect -->
+              <div class="thieptotnghiep__card-shine"></div>
             </div>
-            
-        </article>
-        
+
+            <!-- Card Back -->
+            <div class="thieptotnghiep__card-back">
+              <div class="thieptotnghiep__card-back-content">
+                                  <div class="thieptotnghiep__card-back-overlay"></div>
+
+                <div class="card-top-section">
+                    <div
+                class="thieptotnghiep__card-corner thieptotnghiep__card-corner--tl"
+              ></div>
+              <div
+                class="thieptotnghiep__card-corner thieptotnghiep__card-corner--tr"
+              ></div>
+              <div
+                class="thieptotnghiep__card-corner thieptotnghiep__card-corner--bl"
+              ></div>
+              <div
+                class="thieptotnghiep__card-corner thieptotnghiep__card-corner--br"
+              ></div>
+                    <!-- Avatar Section -->
+                    <section class="thieptotnghiep__card-avatar-section">
+                      <div class="thieptotnghiep__card-avatar">
+                        <div class="thieptotnghiep__card-avatar-wrapper">
+                          <div
+                            class="thieptotnghiep__card-avatar-ring thieptotnghiep__card-avatar-ring--1"
+                          ></div>
+                          <div
+                            class="thieptotnghiep__card-avatar-ring thieptotnghiep__card-avatar-ring--2"
+                          ></div>
+                          <div
+                            class="thieptotnghiep__card-avatar-ring thieptotnghiep__card-avatar-ring--3"
+                          ></div>
+                          <img
+                            data-field="avatar"
+                            src="https://i.pravatar.cc/300?img=12"
+                            alt="Ảnh đại diện người tốt nghiệp"
+                            class="thieptotnghiep__card-avatar-image"
+                            id="guestAvatar"
+                            itemprop="image"
+                          />
+                          <div class="thieptotnghiep__card-avatar-glow"></div>
+                        </div>
+                      </div>
+
+                      <div class="thieptotnghiep__card-name-section">
+                        <h2
+                          class="thieptotnghiep__card-name"
+                          itemprop="organizer"
+                        >
+                          <span
+                            class="thieptotnghiep__card-name-text"
+                            id="guestName"
+                            data-field="guest-name"
+                            >Nguyễn Văn A</span
+                          >
+                        </h2>
+                        <p class="thieptotnghiep__card-age">
+                          <span
+                            class="thieptotnghiep__card-age-label"
+                            style="color: #fff"
+                            >aka</span
+                          >
+                          <strong
+                            class="thieptotnghiep__card-age-number"
+                            id="guestAge"
+                            style="color: #fff"
+                            >Thân mời</strong
+                          >
+                        </p>
+                      </div>
+                    </section>
+
+                    <!-- Details Section -->
+                    <section class="thieptotnghiep__card-details-section">
+                      <div class="thieptotnghiep__card-details">
+                        <div class="thieptotnghiep__card-details-item">
+                          <div class="thieptotnghiep__card-details-icon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            >
+                              <rect
+                                x="3"
+                                y="4"
+                                width="18"
+                                height="18"
+                                rx="2"
+                                ry="2"
+                              ></rect>
+                              <line x1="16" y1="2" x2="16" y2="6"></line>
+                              <line x1="8" y1="2" x2="8" y2="6"></line>
+                              <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                          </div>
+                          <div class="thieptotnghiep__card-details-content">
+                            <span class="thieptotnghiep__card-details-label"
+                              >Ngày</span
+                            >
+                            <time
+                              class="thieptotnghiep__card-details-value"
+                              datetime="2025-12-13"
+                              itemprop="startDate"
+                              id="eventDateDisplay"
+                              data-field="date-display"
+                              style="color: #fff"
+                            >
+                              Thứ Bảy, 13 tháng 12, 2025
+                            </time>
+                          </div>
+                        </div>
+
+                        <div class="thieptotnghiep__card-details-item">
+                          <div class="thieptotnghiep__card-details-icon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            >
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                          </div>
+                          <div class="thieptotnghiep__card-details-content">
+                            <span class="thieptotnghiep__card-details-label"
+                              >Thời gian</span
+                            >
+                            <span
+                              class="thieptotnghiep__card-details-value"
+                              id="eventTimeRange"
+                              data-field="time"
+                              style="color: #fff"
+                              >16:00</span
+                            >
+                          </div>
+                        </div>
+
+                        <div class="thieptotnghiep__card-details-item">
+                          <div class="thieptotnghiep__card-details-icon">
+                            <svg
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                            >
+                              <path
+                                d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                              ></path>
+                              <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                          </div>
+                          <div class="thieptotnghiep__card-details-content">
+                            <span class="thieptotnghiep__card-details-label"
+                              >Địa điểm</span
+                            >
+                            <address
+                              class="thieptotnghiep__card-details-value"
+                              itemprop="location"
+                              id="eventLocation"
+                              data-field="location"
+                              style="color: #fff"
+                            >
+                              Trường Đại học Khoa học Tự nhiên<br />
+                              227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ
+                              Chí Minh<br />
+                            </address>
+                            <a
+                              style="
+                                color: #fff;
+                                padding: 10px;
+                                background: #aa8f3b;
+                                border-radius: 20px;
+                                font-size: 11px;
+                                text-decoration: none;
+                                margin-top: 10px;
+                                display: inline-block;
+                              "
+                              href="https://maps.app.goo.gl/qXFGELW6MQFPKYWN9"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Xem google maps</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                </div>
+
+                <!-- Message Section -->
+                <section class="thieptotnghiep__card-message-section">
+                  <div class="thieptotnghiep__card-message-wrapper">
+                    <div class="thieptotnghiep__card-message-icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <blockquote
+                      class="thieptotnghiep__card-message"
+                      itemprop="description"
+                    >
+                      <p
+                        class="thieptotnghiep__card-message-text"
+                        id="guestMessage"
+                        data-field="message"
+                        style="color: #fff"
+                      >
+                        "yooooo wassupppp anh em"
+                      </p>
+                    </blockquote>
+                  </div>
+                </section>
+
+                <!-- Share Section -->
+                <section
+                  class="thieptotnghiep__card-share-section"
+                  id="shareSection"
+                  hidden
+                >
+                  <button
+                    type="button"
+                    class="thieptotnghiep__share-button"
+                    id="shareButton"
+                  >
+                    <span class="thieptotnghiep__share-icon">🔗</span>
+                    <span id="shareButtonLabel">Sao chép liên kết</span>
+                  </button>
+                  <a
+                    class="thieptotnghiep__share-link"
+                    id="shareLink"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Đang tạo liên kết...
+                  </a>
+                </section>
+
+                <!-- Countdown Section -->
+                <section class="thieptotnghiep__card-countdown-section">
+                  <h3 class="thieptotnghiep__card-countdown-title">
+                    Đếm Ngược Đến Lễ Tốt Nghiệp
+                  </h3>
+                  <div class="thieptotnghiep__countdown" id="countdown">
+                    <div class="thieptotnghiep__countdown-item">
+                      <div class="thieptotnghiep__countdown-circle">
+                        <svg
+                          class="thieptotnghiep__countdown-circle-svg"
+                          viewBox="0 0 100 100"
+                        >
+                          <circle
+                            class="thieptotnghiep__countdown-circle-bg"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                          ></circle>
+                          <circle
+                            class="thieptotnghiep__countdown-circle-progress"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                          ></circle>
+                        </svg>
+                        <span
+                          class="thieptotnghiep__countdown-value"
+                          id="days"
+                          style="color: #fff"
+                          >00</span
+                        >
+                      </div>
+                      <span
+                        class="thieptotnghiep__countdown-label"
+                        style="color: #fff"
+                        >Ngày</span
+                      >
+                    </div>
+
+                    <div class="thieptotnghiep__countdown-item">
+                      <div class="thieptotnghiep__countdown-circle">
+                        <svg
+                          class="thieptotnghiep__countdown-circle-svg"
+                          viewBox="0 0 100 100"
+                        >
+                          <circle
+                            class="thieptotnghiep__countdown-circle-bg"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                          ></circle>
+                          <circle
+                            class="thieptotnghiep__countdown-circle-progress"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                          ></circle>
+                        </svg>
+                        <span
+                          class="thieptotnghiep__countdown-value"
+                          id="hours"
+                          style="color: #fff"
+                          >00</span
+                        >
+                      </div>
+                      <span
+                        class="thieptotnghiep__countdown-label"
+                        style="color: #fff"
+                        >Giờ</span
+                      >
+                    </div>
+
+                    <div class="thieptotnghiep__countdown-item">
+                      <div class="thieptotnghiep__countdown-circle">
+                        <svg
+                          class="thieptotnghiep__countdown-circle-svg"
+                          viewBox="0 0 100 100"
+                        >
+                          <circle
+                            class="thieptotnghiep__countdown-circle-bg"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                          ></circle>
+                          <circle
+                            class="thieptotnghiep__countdown-circle-progress"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                          ></circle>
+                        </svg>
+                        <span
+                          class="thieptotnghiep__countdown-value"
+                          id="minutes"
+                          style="color: #fff"
+                          >00</span
+                        >
+                      </div>
+                      <span
+                        class="thieptotnghiep__countdown-label"
+                        style="color: #fff"
+                        >Phút</span
+                      >
+                    </div>
+
+                    <div class="thieptotnghiep__countdown-item">
+                      <div class="thieptotnghiep__countdown-circle">
+                        <svg
+                          class="thieptotnghiep__countdown-circle-svg"
+                          viewBox="0 0 100 100"
+                        >
+                          <circle
+                            class="thieptotnghiep__countdown-circle-bg"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                          ></circle>
+                          <circle
+                            class="thieptotnghiep__countdown-circle-progress"
+                            cx="50"
+                            cy="50"
+                            r="45"
+                          ></circle>
+                        </svg>
+                        <span
+                          class="thieptotnghiep__countdown-value"
+                          id="seconds"
+                          style="color: #fff"
+                          >00</span
+                        >
+                      </div>
+                      <span
+                        class="thieptotnghiep__countdown-label"
+                        style="color: #fff"
+                        >Giây</span
+                      >
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="thieptotnghiep__card-footer">
+                  <div class="thieptotnghiep__card-footer-divider"></div>
+                  <p class="thieptotnghiep__card-footer-text">
+                    Rất mong được gặp bạn! 🎊
+                  </p>
+                  <button
+                    class="thieptotnghiep__card-close"
+                    id="closeCard"
+                    aria-label="Đóng thiệp"
+                  >
+                    <span class="thieptotnghiep__card-close-icon">✕</span>
+                    <span
+                      class="thieptotnghiep__card-close-text"
+                      style="color: #fff"
+                      >Đóng thiệp</span
+                    >
+                  </button>
+                </footer>
+              </div>
+
+              <!-- Decorative Corners -->
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
 
     <!-- Music Control -->
     <aside class="thieptotnghiep__music">
-        <button class="thieptotnghiep__music-button thieptotnghiep__music-button--paused" id="musicToggle" aria-label="Bật/tắt nhạc nền" data-audio-src="music/quangtaocaibuong.mp3">
-            <span class="thieptotnghiep__music-icon" id="musicIcon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                </svg>
-            </span>
-            <span class="thieptotnghiep__music-wave">
-                <span class="thieptotnghiep__music-wave-bar"></span>
-                <span class="thieptotnghiep__music-wave-bar"></span>
-                <span class="thieptotnghiep__music-wave-bar"></span>
-            </span>
-        </button>
+      <button
+        class="thieptotnghiep__music-button thieptotnghiep__music-button--paused"
+        id="musicToggle"
+        aria-label="Bật/tắt nhạc nền"
+        data-audio-src="music/quangtaocaibuong.mp3"
+      >
+        <span class="thieptotnghiep__music-icon" id="musicIcon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path
+              d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+            ></path>
+          </svg>
+        </span>
+        <span class="thieptotnghiep__music-wave">
+          <span class="thieptotnghiep__music-wave-bar"></span>
+          <span class="thieptotnghiep__music-wave-bar"></span>
+          <span class="thieptotnghiep__music-wave-bar"></span>
+        </span>
+      </button>
     </aside>
 
     <!-- Canvas for Advanced Effects -->
     <canvas class="thieptotnghiep__canvas" id="canvas"></canvas>
 
     <script>
-        // ===================================
-// Invitation Defaults
-// ===================================
-const DEFAULT_INVITATION = {
-    slug: 'nguyen-van-a',
-    name: 'Nguyễn Văn A',
-    age: 2025,
-    countdownDate: '2025-12-13T16:00:00+07:00',
-    dateISO: '2025-12-13',
-    dateDisplay: 'Thứ Bảy, 13 tháng 12, 2025',
-    time: '16:00',
-    location: [
-        'Trường Đại học Khoa học Tự nhiên',
-        '227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh'
-    ],
-    message: 'yooooo wassupppp anh em',
-    image: 'https://i.pravatar.cc/300?img=12',
-    metaTitle: 'Thiệp mời lễ tốt nghiệp',
-    metaDescription: 'Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.',
-    sharePath: 'index.html?guest=nguyen-van-a'
-};
+      // ===================================
+      // Invitation Defaults
+      // ===================================
+      const DEFAULT_INVITATION = {
+        slug: "nguyen-van-a",
+        name: "Nguyễn Văn A",
+        age: 2025,
+        countdownDate: "2025-12-13T16:00:00+07:00",
+        dateISO: "2025-12-13",
+        dateDisplay: "Thứ Bảy, 13 tháng 12, 2025",
+        time: "16:00",
+        location: [
+          "Trường Đại học Khoa học Tự nhiên",
+          "227 Nguyễn Văn Cừ, Phường 4, Quận 5, Thành phố Hồ Chí Minh",
+        ],
+        message: "yooooo wassupppp anh em",
+        image: "https://i.pravatar.cc/300?img=12",
+        metaTitle: "Thiệp mời lễ tốt nghiệp",
+        metaDescription:
+          "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        sharePath: "index.html?guest=nguyen-van-a",
+      };
 
-// ===================================
-// Configuration
-// ===================================
-const CONFIG = {
-    birthdayDate: new Date(DEFAULT_INVITATION.countdownDate),
-    particleCount: 100,
-    confettiCount: 50,
-    colors: {
-        primary: '#d4af37',
-        secondary: '#aa8f3b',
-        accent: '#ffd700',
-        purple: '#6a5acd',
-        pink: '#ff6b9d'
-    }
-};
+      // ===================================
+      // Configuration
+      // ===================================
+      const CONFIG = {
+        birthdayDate: new Date(DEFAULT_INVITATION.countdownDate),
+        particleCount: 100,
+        confettiCount: 50,
+        colors: {
+          primary: "#d4af37",
+          secondary: "#aa8f3b",
+          accent: "#ffd700",
+          purple: "#6a5acd",
+          pink: "#ff6b9d",
+        },
+      };
 
-// ===================================
-// State Management
-// ===================================
-const STATE = {
-    isCardFlipped: false,
-    isMusicPlaying: false,
-    audio: null,
-    playMusic: null,
-    pauseMusic: null,
-    particles: [],
-    confetti: [],
-    shareUrl: '',
-    shareData: {
-        title: '',
-        text: ''
-    }
-};
+      // ===================================
+      // State Management
+      // ===================================
+      const STATE = {
+        isCardFlipped: false,
+        isMusicPlaying: false,
+        audio: null,
+        playMusic: null,
+        pauseMusic: null,
+        particles: [],
+        confetti: [],
+        shareUrl: "",
+        shareData: {
+          title: "",
+          text: "",
+        },
+      };
 
-// ===================================
-// DOM Elements
-// ===================================
-const DOM = {
-    card: document.getElementById('card'),
-    cardInner: document.querySelector('.thieptotnghiep__card-inner'),
-    cardBack: document.querySelector('.thieptotnghiep__card-back'),
-    openCard: document.getElementById('openCard'),
-    closeCard: document.getElementById('closeCard'),
-    musicToggle: document.getElementById('musicToggle'),
-    musicButton: document.querySelector('.thieptotnghiep__music-button'),
-    canvas: document.getElementById('canvas'),
-    particles: document.getElementById('particles'),
-    countdown: {
-        days: document.getElementById('days'),
-        hours: document.getElementById('hours'),
-        minutes: document.getElementById('minutes'),
-        seconds: document.getElementById('seconds')
-    },
-    share: {
-        section: document.getElementById('shareSection'),
-        button: document.getElementById('shareButton'),
-        label: document.getElementById('shareButtonLabel'),
-        link: document.getElementById('shareLink')
-    }
-};
+      // ===================================
+      // DOM Elements
+      // ===================================
+      const DOM = {
+        card: document.getElementById("card"),
+        cardInner: document.querySelector(".thieptotnghiep__card-inner"),
+        cardBack: document.querySelector(".thieptotnghiep__card-back"),
+        openCard: document.getElementById("openCard"),
+        closeCard: document.getElementById("closeCard"),
+        musicToggle: document.getElementById("musicToggle"),
+        musicButton: document.querySelector(".thieptotnghiep__music-button"),
+        canvas: document.getElementById("canvas"),
+        particles: document.getElementById("particles"),
+        countdown: {
+          days: document.getElementById("days"),
+          hours: document.getElementById("hours"),
+          minutes: document.getElementById("minutes"),
+          seconds: document.getElementById("seconds"),
+        },
+        share: {
+          section: document.getElementById("shareSection"),
+          button: document.getElementById("shareButton"),
+          label: document.getElementById("shareButtonLabel"),
+          link: document.getElementById("shareLink"),
+        },
+      };
 
-const DYNAMIC = {
-    avatar: document.getElementById('guestAvatar'),
-    name: document.getElementById('guestName'),
-    age: document.getElementById('guestAge'),
-    dateDisplay: document.getElementById('eventDateDisplay'),
-    timeRange: document.getElementById('eventTimeRange'),
-    location: document.getElementById('eventLocation'),
-    message: document.getElementById('guestMessage')
-};
+      const DYNAMIC = {
+        avatar: document.getElementById("guestAvatar"),
+        name: document.getElementById("guestName"),
+        age: document.getElementById("guestAge"),
+        dateDisplay: document.getElementById("eventDateDisplay"),
+        timeRange: document.getElementById("eventTimeRange"),
+        location: document.getElementById("eventLocation"),
+        message: document.getElementById("guestMessage"),
+      };
 
-// ===================================
-// Particle System
-// ===================================
-class Particle {
-    constructor(canvas) {
-        this.canvas = canvas;
-        this.reset();
-    }
-
-    reset() {
-        this.x = Math.random() * this.canvas.width;
-        this.y = Math.random() * this.canvas.height;
-        this.size = Math.random() * 3 + 1;
-        this.speedX = Math.random() * 2 - 1;
-        this.speedY = Math.random() * 2 - 1;
-        this.opacity = Math.random() * 0.5 + 0.2;
-        this.color = Object.values(CONFIG.colors)[Math.floor(Math.random() * 5)];
-    }
-
-    update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-
-        if (this.x < 0 || this.x > this.canvas.width) this.speedX *= -1;
-        if (this.y < 0 || this.y > this.canvas.height) this.speedY *= -1;
-    }
-
-    draw(ctx) {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = this.color;
-        ctx.globalAlpha = this.opacity;
-        ctx.fill();
-        ctx.globalAlpha = 1;
-    }
-}
-
-// ===================================
-// Confetti System
-// ===================================
-class Confetti {
-    constructor(canvas, x, y) {
-        this.canvas = canvas;
-        this.x = x;
-        this.y = y;
-        this.size = Math.random() * 10 + 5;
-        this.speedY = Math.random() * 5 + 2;
-        this.speedX = Math.random() * 4 - 2;
-        this.rotation = Math.random() * 360;
-        this.rotationSpeed = Math.random() * 10 - 5;
-        this.color = Object.values(CONFIG.colors)[Math.floor(Math.random() * 5)];
-        this.opacity = 1;
-    }
-
-    update() {
-        this.y += this.speedY;
-        this.x += this.speedX;
-        this.rotation += this.rotationSpeed;
-        this.speedY += 0.1; // gravity
-        this.opacity -= 0.01;
-    }
-
-    draw(ctx) {
-        ctx.save();
-        ctx.translate(this.x, this.y);
-        ctx.rotate((this.rotation * Math.PI) / 180);
-        ctx.globalAlpha = this.opacity;
-        ctx.fillStyle = this.color;
-        ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);
-        ctx.restore();
-    }
-
-    isAlive() {
-        return this.opacity > 0 && this.y < this.canvas.height;
-    }
-}
-
-// ===================================
-// Canvas Animation
-// ===================================
-function initCanvas() {
-    const canvas = DOM.canvas;
-    const ctx = canvas.getContext('2d');
-
-    function resizeCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-    }
-
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
-
-    // Create particles
-    for (let i = 0; i < CONFIG.particleCount; i++) {
-        STATE.particles.push(new Particle(canvas));
-    }
-
-    // Draw connections between particles
-    function drawConnections() {
-        for (let i = 0; i < STATE.particles.length; i++) {
-            for (let j = i + 1; j < STATE.particles.length; j++) {
-                const dx = STATE.particles[i].x - STATE.particles[j].x;
-                const dy = STATE.particles[i].y - STATE.particles[j].y;
-                const distance = Math.sqrt(dx * dx + dy * dy);
-
-                if (distance < 150) {
-                    ctx.beginPath();
-                    ctx.strokeStyle = CONFIG.colors.primary;
-                    ctx.globalAlpha = (1 - distance / 150) * 0.2;
-                    ctx.lineWidth = 1;
-                    ctx.moveTo(STATE.particles[i].x, STATE.particles[i].y);
-                    ctx.lineTo(STATE.particles[j].x, STATE.particles[j].y);
-                    ctx.stroke();
-                    ctx.globalAlpha = 1;
-                }
-            }
+      // ===================================
+      // Particle System
+      // ===================================
+      class Particle {
+        constructor(canvas) {
+          this.canvas = canvas;
+          this.reset();
         }
-    }
 
-    function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        reset() {
+          this.x = Math.random() * this.canvas.width;
+          this.y = Math.random() * this.canvas.height;
+          this.size = Math.random() * 3 + 1;
+          this.speedX = Math.random() * 2 - 1;
+          this.speedY = Math.random() * 2 - 1;
+          this.opacity = Math.random() * 0.5 + 0.2;
+          this.color = Object.values(CONFIG.colors)[
+            Math.floor(Math.random() * 5)
+          ];
+        }
 
-        // Update and draw particles
-        STATE.particles.forEach(particle => {
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+
+          if (this.x < 0 || this.x > this.canvas.width) this.speedX *= -1;
+          if (this.y < 0 || this.y > this.canvas.height) this.speedY *= -1;
+        }
+
+        draw(ctx) {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.globalAlpha = this.opacity;
+          ctx.fill();
+          ctx.globalAlpha = 1;
+        }
+      }
+
+      // ===================================
+      // Confetti System
+      // ===================================
+      class Confetti {
+        constructor(canvas, x, y) {
+          this.canvas = canvas;
+          this.x = x;
+          this.y = y;
+          this.size = Math.random() * 10 + 5;
+          this.speedY = Math.random() * 5 + 2;
+          this.speedX = Math.random() * 4 - 2;
+          this.rotation = Math.random() * 360;
+          this.rotationSpeed = Math.random() * 10 - 5;
+          this.color = Object.values(CONFIG.colors)[
+            Math.floor(Math.random() * 5)
+          ];
+          this.opacity = 1;
+        }
+
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX;
+          this.rotation += this.rotationSpeed;
+          this.speedY += 0.1; // gravity
+          this.opacity -= 0.01;
+        }
+
+        draw(ctx) {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate((this.rotation * Math.PI) / 180);
+          ctx.globalAlpha = this.opacity;
+          ctx.fillStyle = this.color;
+          ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);
+          ctx.restore();
+        }
+
+        isAlive() {
+          return this.opacity > 0 && this.y < this.canvas.height;
+        }
+      }
+
+      // ===================================
+      // Canvas Animation
+      // ===================================
+      function initCanvas() {
+        const canvas = DOM.canvas;
+        const ctx = canvas.getContext("2d");
+
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+
+        // Create particles
+        for (let i = 0; i < CONFIG.particleCount; i++) {
+          STATE.particles.push(new Particle(canvas));
+        }
+
+        // Draw connections between particles
+        function drawConnections() {
+          for (let i = 0; i < STATE.particles.length; i++) {
+            for (let j = i + 1; j < STATE.particles.length; j++) {
+              const dx = STATE.particles[i].x - STATE.particles[j].x;
+              const dy = STATE.particles[i].y - STATE.particles[j].y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+
+              if (distance < 150) {
+                ctx.beginPath();
+                ctx.strokeStyle = CONFIG.colors.primary;
+                ctx.globalAlpha = (1 - distance / 150) * 0.2;
+                ctx.lineWidth = 1;
+                ctx.moveTo(STATE.particles[i].x, STATE.particles[i].y);
+                ctx.lineTo(STATE.particles[j].x, STATE.particles[j].y);
+                ctx.stroke();
+                ctx.globalAlpha = 1;
+              }
+            }
+          }
+        }
+
+        function animate() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          // Update and draw particles
+          STATE.particles.forEach((particle) => {
             particle.update();
             particle.draw(ctx);
-        });
+          });
 
-        drawConnections();
+          drawConnections();
 
-        // Update and draw confetti
-        STATE.confetti = STATE.confetti.filter(conf => {
+          // Update and draw confetti
+          STATE.confetti = STATE.confetti.filter((conf) => {
             conf.update();
             conf.draw(ctx);
             return conf.isAlive();
-        });
+          });
 
-        requestAnimationFrame(animate);
-    }
+          requestAnimationFrame(animate);
+        }
 
-    animate();
-}
+        animate();
+      }
 
-// ===================================
-// Create Particles in DOM
-// ===================================
-function createDOMParticles() {
-    const container = DOM.particles;
-    const particleCount = 50;
+      // ===================================
+      // Create Particles in DOM
+      // ===================================
+      function createDOMParticles() {
+        const container = DOM.particles;
+        const particleCount = 50;
 
-    for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.style.cssText = `
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement("div");
+          particle.style.cssText = `
             position: absolute;
             width: ${Math.random() * 4 + 2}px;
             height: ${Math.random() * 4 + 2}px;
-            background: ${Object.values(CONFIG.colors)[Math.floor(Math.random() * 5)]};
+            background: ${
+              Object.values(CONFIG.colors)[Math.floor(Math.random() * 5)]
+            };
             border-radius: 50%;
             left: ${Math.random() * 100}%;
             top: ${Math.random() * 100}%;
             opacity: ${Math.random() * 0.5 + 0.2};
-            animation: thieptotnghiep-particle-float ${Math.random() * 10 + 10}s linear infinite;
+            animation: thieptotnghiep-particle-float ${
+              Math.random() * 10 + 10
+            }s linear infinite;
             animation-delay: ${Math.random() * 5}s;
             pointer-events: none;
         `;
-        container.appendChild(particle);
-    }
+          container.appendChild(particle);
+        }
 
-    // Add CSS animation
-    if (!document.getElementById('particle-animation')) {
-        const style = document.createElement('style');
-        style.id = 'particle-animation';
-        style.textContent = `
+        // Add CSS animation
+        if (!document.getElementById("particle-animation")) {
+          const style = document.createElement("style");
+          style.id = "particle-animation";
+          style.textContent = `
             @keyframes thieptotnghiep-particle-float {
                 0%, 100% {
                     transform: translate(0, 0) scale(1);
@@ -2237,222 +924,233 @@ function createDOMParticles() {
                 }
             }
         `;
-        document.head.appendChild(style);
-    }
-}
+          document.head.appendChild(style);
+        }
+      }
 
-// ===================================
-// Card Flip
-// ===================================
-function initCardFlip() {
-    if (!DOM.openCard || !DOM.closeCard) {
-        return;
-    }
-    DOM.openCard.addEventListener('click', () => {
-        flipCard(true);
-        createConfettiBurst();
-        if (typeof STATE.playMusic === 'function') {
-            STATE.playMusic().catch(error => {
-                console.warn('Không thể phát nhạc khi mở thiệp:', error);
+      // ===================================
+      // Card Flip
+      // ===================================
+      function initCardFlip() {
+        if (!DOM.openCard || !DOM.closeCard) {
+          return;
+        }
+        DOM.openCard.addEventListener("click", () => {
+          flipCard(true);
+          createConfettiBurst();
+          if (typeof STATE.playMusic === "function") {
+            STATE.playMusic().catch((error) => {
+              console.warn("Không thể phát nhạc khi mở thiệp:", error);
             });
+          }
+        });
+
+        DOM.closeCard.addEventListener("click", () => {
+          flipCard(false);
+        });
+      }
+
+      function flipCard(flip) {
+        STATE.isCardFlipped = flip;
+        if (flip && DOM.card) {
+          DOM.card.style.transform = "";
         }
-    });
-
-    DOM.closeCard.addEventListener('click', () => {
-        flipCard(false);
-    });
-}
-
-function flipCard(flip) {
-    STATE.isCardFlipped = flip;
-    if (flip && DOM.card) {
-        DOM.card.style.transform = '';
-    }
-    if (flip) {
-        DOM.cardInner.classList.add('thieptotnghiep__card-inner--flipped');
-        if (DOM.cardBack) {
+        if (flip) {
+          DOM.cardInner.classList.add("thieptotnghiep__card-inner--flipped");
+          if (DOM.cardBack) {
             DOM.cardBack.scrollTop = 0;
+          }
+        } else {
+          DOM.cardInner.classList.remove("thieptotnghiep__card-inner--flipped");
         }
-    } else {
-        DOM.cardInner.classList.remove('thieptotnghiep__card-inner--flipped');
-    }
-}
+      }
 
-// ===================================
-// Confetti Burst
-// ===================================
-function createConfettiBurst() {
-    const canvas = DOM.canvas;
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
+      // ===================================
+      // Confetti Burst
+      // ===================================
+      function createConfettiBurst() {
+        const canvas = DOM.canvas;
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
 
-    for (let i = 0; i < CONFIG.confettiCount; i++) {
-        const angle = (Math.PI * 2 * i) / CONFIG.confettiCount;
-        const velocity = Math.random() * 5 + 5;
-        const confetti = new Confetti(canvas, centerX, centerY);
-        confetti.speedX = Math.cos(angle) * velocity;
-        confetti.speedY = Math.sin(angle) * velocity - 5;
-        STATE.confetti.push(confetti);
-    }
-}
+        for (let i = 0; i < CONFIG.confettiCount; i++) {
+          const angle = (Math.PI * 2 * i) / CONFIG.confettiCount;
+          const velocity = Math.random() * 5 + 5;
+          const confetti = new Confetti(canvas, centerX, centerY);
+          confetti.speedX = Math.cos(angle) * velocity;
+          confetti.speedY = Math.sin(angle) * velocity - 5;
+          STATE.confetti.push(confetti);
+        }
+      }
 
-// ===================================
-// Countdown Timer
-// ===================================
-function initCountdown() {
-    function updateCountdown() {
-        if (!(CONFIG.birthdayDate instanceof Date) || Number.isNaN(CONFIG.birthdayDate.getTime())) {
-            DOM.countdown.days.textContent = '00';
-            DOM.countdown.hours.textContent = '00';
-            DOM.countdown.minutes.textContent = '00';
-            DOM.countdown.seconds.textContent = '00';
+      // ===================================
+      // Countdown Timer
+      // ===================================
+      function initCountdown() {
+        function updateCountdown() {
+          if (
+            !(CONFIG.birthdayDate instanceof Date) ||
+            Number.isNaN(CONFIG.birthdayDate.getTime())
+          ) {
+            DOM.countdown.days.textContent = "00";
+            DOM.countdown.hours.textContent = "00";
+            DOM.countdown.minutes.textContent = "00";
+            DOM.countdown.seconds.textContent = "00";
             return;
-        }
+          }
 
-        const now = new Date().getTime();
-        const distance = CONFIG.birthdayDate.getTime() - now;
+          const now = new Date().getTime();
+          const distance = CONFIG.birthdayDate.getTime() - now;
 
-        if (distance < 0) {
-            DOM.countdown.days.textContent = '00';
-            DOM.countdown.hours.textContent = '00';
-            DOM.countdown.minutes.textContent = '00';
-            DOM.countdown.seconds.textContent = '00';
+          if (distance < 0) {
+            DOM.countdown.days.textContent = "00";
+            DOM.countdown.hours.textContent = "00";
+            DOM.countdown.minutes.textContent = "00";
+            DOM.countdown.seconds.textContent = "00";
             return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          DOM.countdown.days.textContent = String(days).padStart(2, "0");
+          DOM.countdown.hours.textContent = String(hours).padStart(2, "0");
+          DOM.countdown.minutes.textContent = String(minutes).padStart(2, "0");
+          DOM.countdown.seconds.textContent = String(seconds).padStart(2, "0");
         }
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      }
 
-        DOM.countdown.days.textContent = String(days).padStart(2, '0');
-        DOM.countdown.hours.textContent = String(hours).padStart(2, '0');
-        DOM.countdown.minutes.textContent = String(minutes).padStart(2, '0');
-        DOM.countdown.seconds.textContent = String(seconds).padStart(2, '0');
-    }
+      // ===================================
+      // Music Player
+      // ===================================
+      function initMusicPlayer() {
+        if (!DOM.musicToggle || !DOM.musicButton) {
+          return;
+        }
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-}
+        const audioSrc = DOM.musicButton.dataset.audioSrc;
+        DOM.musicToggle.setAttribute("aria-pressed", "false");
 
-// ===================================
-// Music Player
-// ===================================
-function initMusicPlayer() {
-    if (!DOM.musicToggle || !DOM.musicButton) {
-        return;
-    }
+        if (!audioSrc) {
+          console.warn(
+            "Không tìm thấy đường dẫn nhạc. Hãy gán data-audio-src cho nút nhạc."
+          );
+          DOM.musicButton.classList.add("thieptotnghiep__music-button--paused");
+          return;
+        }
 
-    const audioSrc = DOM.musicButton.dataset.audioSrc;
-    DOM.musicToggle.setAttribute('aria-pressed', 'false');
+        STATE.audio = new Audio(audioSrc);
+        STATE.audio.loop = true;
+        STATE.audio.preload = "auto";
+        STATE.audio.volume = 0.4;
 
-    if (!audioSrc) {
-        console.warn('Không tìm thấy đường dẫn nhạc. Hãy gán data-audio-src cho nút nhạc.');
-        DOM.musicButton.classList.add('thieptotnghiep__music-button--paused');
-        return;
-    }
-
-    STATE.audio = new Audio(audioSrc);
-    STATE.audio.loop = true;
-    STATE.audio.preload = 'auto';
-    STATE.audio.volume = 0.4;
-
-    const playMusic = async () => {
-        if (!STATE.audio || STATE.isMusicPlaying) {
+        const playMusic = async () => {
+          if (!STATE.audio || STATE.isMusicPlaying) {
             return;
-        }
+          }
 
-        await STATE.audio.play();
-        STATE.isMusicPlaying = true;
-        DOM.musicButton.classList.remove('thieptotnghiep__music-button--paused');
-        DOM.musicToggle.setAttribute('aria-pressed', 'true');
-    };
+          await STATE.audio.play();
+          STATE.isMusicPlaying = true;
+          DOM.musicButton.classList.remove(
+            "thieptotnghiep__music-button--paused"
+          );
+          DOM.musicToggle.setAttribute("aria-pressed", "true");
+        };
 
-    const pauseMusic = () => {
-        if (!STATE.audio || !STATE.isMusicPlaying) {
+        const pauseMusic = () => {
+          if (!STATE.audio || !STATE.isMusicPlaying) {
             return;
-        }
+          }
 
-        STATE.audio.pause();
-        STATE.isMusicPlaying = false;
-        DOM.musicButton.classList.add('thieptotnghiep__music-button--paused');
-        DOM.musicToggle.setAttribute('aria-pressed', 'false');
-    };
+          STATE.audio.pause();
+          STATE.isMusicPlaying = false;
+          DOM.musicButton.classList.add("thieptotnghiep__music-button--paused");
+          DOM.musicToggle.setAttribute("aria-pressed", "false");
+        };
 
-    STATE.playMusic = async () => {
-        try {
+        STATE.playMusic = async () => {
+          try {
             await playMusic();
-        } catch (error) {
-            console.error('Không thể phát nhạc:', error);
+          } catch (error) {
+            console.error("Không thể phát nhạc:", error);
             pauseMusic();
             throw error;
-        }
-    };
+          }
+        };
 
-    STATE.pauseMusic = pauseMusic;
+        STATE.pauseMusic = pauseMusic;
 
-    DOM.musicToggle.addEventListener('click', async () => {
-        if (STATE.isMusicPlaying) {
+        DOM.musicToggle.addEventListener("click", async () => {
+          if (STATE.isMusicPlaying) {
             pauseMusic();
             return;
-        }
+          }
 
-        try {
+          try {
             await playMusic();
-        } catch (error) {
-            console.error('Không thể phát nhạc:', error);
+          } catch (error) {
+            console.error("Không thể phát nhạc:", error);
             pauseMusic();
-        }
-    });
+          }
+        });
 
-    document.addEventListener('visibilitychange', () => {
-        if (document.hidden) {
+        document.addEventListener("visibilitychange", () => {
+          if (document.hidden) {
             pauseMusic();
-        }
-    });
-}
+          }
+        });
+      }
 
-// ===================================
-// Mouse Interaction Effects
-// ===================================
-function initMouseEffects() {
-    let mouseX = 0;
-    let mouseY = 0;
+      // ===================================
+      // Mouse Interaction Effects
+      // ===================================
+      function initMouseEffects() {
+        let mouseX = 0;
+        let mouseY = 0;
 
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
+        document.addEventListener("mousemove", (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
 
-        // Parallax effect on card
-        if (DOM.card) {
+          // Parallax effect on card
+          if (DOM.card) {
             if (STATE.isCardFlipped) {
-                if (DOM.card.style.transform) {
-                    DOM.card.style.transform = '';
-                }
+              if (DOM.card.style.transform) {
+                DOM.card.style.transform = "";
+              }
             } else {
-                const moveX = (mouseX - window.innerWidth / 2) / 50;
-                const moveY = (mouseY - window.innerHeight / 2) / 50;
-                DOM.card.style.transform = `perspective(2000px) rotateY(${moveX}deg) rotateX(${-moveY}deg)`;
+              const moveX = (mouseX - window.innerWidth / 2) / 50;
+              const moveY = (mouseY - window.innerHeight / 2) / 50;
+              DOM.card.style.transform = `perspective(2000px) rotateY(${moveX}deg) rotateX(${-moveY}deg)`;
             }
-        }
+          }
 
-        // Create sparkle on mouse move
-        if (Math.random() > 0.95) {
+          // Create sparkle on mouse move
+          if (Math.random() > 0.95) {
             createSparkle(mouseX, mouseY);
-        }
-    });
+          }
+        });
 
-    // Reset card position on mouse leave
-    document.addEventListener('mouseleave', () => {
-        if (DOM.card) {
-            DOM.card.style.transform = '';
-        }
-    });
-}
+        // Reset card position on mouse leave
+        document.addEventListener("mouseleave", () => {
+          if (DOM.card) {
+            DOM.card.style.transform = "";
+          }
+        });
+      }
 
-function createSparkle(x, y) {
-    const sparkle = document.createElement('div');
-    sparkle.style.cssText = `
+      function createSparkle(x, y) {
+        const sparkle = document.createElement("div");
+        sparkle.style.cssText = `
         position: fixed;
         left: ${x}px;
         top: ${y}px;
@@ -2465,16 +1163,16 @@ function createSparkle(x, y) {
         box-shadow: 0 0 10px currentColor;
         animation: thieptotnghiep-sparkle-fade 1s ease forwards;
     `;
-    document.body.appendChild(sparkle);
+        document.body.appendChild(sparkle);
 
-    setTimeout(() => sparkle.remove(), 1000);
-}
+        setTimeout(() => sparkle.remove(), 1000);
+      }
 
-// Add sparkle animation
-if (!document.getElementById('sparkle-animation')) {
-    const style = document.createElement('style');
-    style.id = 'sparkle-animation';
-    style.textContent = `
+      // Add sparkle animation
+      if (!document.getElementById("sparkle-animation")) {
+        const style = document.createElement("style");
+        style.id = "sparkle-animation";
+        style.textContent = `
         @keyframes thieptotnghiep-sparkle-fade {
             0% {
                 opacity: 1;
@@ -2482,403 +1180,466 @@ if (!document.getElementById('sparkle-animation')) {
             }
             100% {
                 opacity: 0;
-                transform: translate(${Math.random() * 50 - 25}px, ${Math.random() * 50 - 25}px) scale(0);
+                transform: translate(${Math.random() * 50 - 25}px, ${
+          Math.random() * 50 - 25
+        }px) scale(0);
             }
         }
     `;
-    document.head.appendChild(style);
-}
+        document.head.appendChild(style);
+      }
 
-// ===================================
-// Touch Gestures
-// ===================================
-function initTouchGestures() {
-    if (!DOM.card) {
-        return;
-    }
-    let touchStartX = 0;
-    let touchStartY = 0;
-
-    DOM.card.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-        touchStartY = e.changedTouches[0].screenY;
-    }, { passive: true });
-
-    DOM.card.addEventListener('touchend', (e) => {
-        const touchEndX = e.changedTouches[0].screenX;
-        const touchEndY = e.changedTouches[0].screenY;
-        
-        const diffX = touchStartX - touchEndX;
-        const diffY = touchStartY - touchEndY;
-
-        // Swipe left to open
-        if (Math.abs(diffX) > Math.abs(diffY) && diffX > 50 && !STATE.isCardFlipped) {
-            DOM.openCard.click();
+      // ===================================
+      // Touch Gestures
+      // ===================================
+      function initTouchGestures() {
+        if (!DOM.card) {
+          return;
         }
+        let touchStartX = 0;
+        let touchStartY = 0;
 
-        // Swipe right to close
-        if (Math.abs(diffX) > Math.abs(diffY) && diffX < -50 && STATE.isCardFlipped) {
+        DOM.card.addEventListener(
+          "touchstart",
+          (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
+          },
+          { passive: true }
+        );
+
+        DOM.card.addEventListener(
+          "touchend",
+          (e) => {
+            const touchEndX = e.changedTouches[0].screenX;
+            const touchEndY = e.changedTouches[0].screenY;
+
+            const diffX = touchStartX - touchEndX;
+            const diffY = touchStartY - touchEndY;
+
+            // Swipe left to open
+            if (
+              Math.abs(diffX) > Math.abs(diffY) &&
+              diffX > 50 &&
+              !STATE.isCardFlipped
+            ) {
+              DOM.openCard.click();
+            }
+
+            // Swipe right to close
+            if (
+              Math.abs(diffX) > Math.abs(diffY) &&
+              diffX < -50 &&
+              STATE.isCardFlipped
+            ) {
+              DOM.closeCard.click();
+            }
+          },
+          { passive: true }
+        );
+      }
+
+      // ===================================
+      // Keyboard Navigation
+      // ===================================
+      function initKeyboardNavigation() {
+        document.addEventListener("keydown", (e) => {
+          // ESC to close card
+          if (e.key === "Escape" && STATE.isCardFlipped) {
             DOM.closeCard.click();
-        }
-    }, { passive: true });
-}
+          }
 
-// ===================================
-// Keyboard Navigation
-// ===================================
-function initKeyboardNavigation() {
-    document.addEventListener('keydown', (e) => {
-        // ESC to close card
-        if (e.key === 'Escape' && STATE.isCardFlipped) {
-            DOM.closeCard.click();
-        }
-
-        // Enter or Space to open card
-        if ((e.key === 'Enter' || e.key === ' ') && !STATE.isCardFlipped && document.activeElement === DOM.openCard) {
+          // Enter or Space to open card
+          if (
+            (e.key === "Enter" || e.key === " ") &&
+            !STATE.isCardFlipped &&
+            document.activeElement === DOM.openCard
+          ) {
             e.preventDefault();
             DOM.openCard.click();
-        }
+          }
 
-        // M to toggle music
-        if (e.key === 'm' || e.key === 'M') {
+          // M to toggle music
+          if (e.key === "m" || e.key === "M") {
             DOM.musicToggle.click();
-        }
-    });
-}
+          }
+        });
+      }
 
-// ===================================
-// Performance Optimization
-// ===================================
-function initPerformanceOptimization() {
-    // Reduce particles on low-end devices
-    if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
-        CONFIG.particleCount = 30;
-        CONFIG.confettiCount = 20;
-    }
-
-    // Reduce animations on mobile
-    if (window.innerWidth < 768) {
-        CONFIG.particleCount = 50;
-        CONFIG.confettiCount = 30;
-    }
-}
-
-// ===================================
-// Accessibility
-// ===================================
-function initAccessibility() {
-    // Add ARIA live region
-    const liveRegion = document.createElement('div');
-    liveRegion.setAttribute('aria-live', 'polite');
-    liveRegion.setAttribute('aria-atomic', 'true');
-    liveRegion.className = 'thieptotnghiep__sr-only';
-    liveRegion.style.cssText = 'position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;';
-    document.body.appendChild(liveRegion);
-
-    // Announce card state
-    DOM.openCard.addEventListener('click', () => {
-        liveRegion.textContent = 'Thiệp mời lễ tốt nghiệp đã được mở';
-    });
-
-    DOM.closeCard.addEventListener('click', () => {
-        liveRegion.textContent = 'Thiệp mời lễ tốt nghiệp đã được đóng';
-    });
-}
-
-// ===================================
-// Data Loading & Binding
-// ===================================
-function getInvitationSlug() {
-    const params = new URLSearchParams(window.location.search);
-    const fromQuery = params.get('guest');
-    if (fromQuery) {
-        return decodeURIComponent(fromQuery.trim().toLowerCase());
-    }
-
-    const hash = window.location.hash.replace('#', '').trim().toLowerCase();
-    if (hash) {
-        return decodeURIComponent(hash);
-    }
-
-    const segments = window.location.pathname
-        .split('/')
-        .filter(Boolean);
-    if (segments.length) {
-        const lastSegment = decodeURIComponent(segments[segments.length - 1]).toLowerCase();
-        if (lastSegment) {
-            return lastSegment.replace(/\.html?$/i, '');
-        }
-    }
-
-    return DEFAULT_INVITATION.slug;
-}
-
-async function loadInvitationData() {
-    const slug = getInvitationSlug();
-
-    try {
-        const response = await fetch('data/invitations.json', { cache: 'no-store' });
-        if (!response.ok) {
-            throw new Error(`Không thể tải dữ liệu khách mời (HTTP ${response.status})`);
+      // ===================================
+      // Performance Optimization
+      // ===================================
+      function initPerformanceOptimization() {
+        // Reduce particles on low-end devices
+        if (
+          navigator.hardwareConcurrency &&
+          navigator.hardwareConcurrency < 4
+        ) {
+          CONFIG.particleCount = 30;
+          CONFIG.confettiCount = 20;
         }
 
-        const payload = await response.json();
-        const guests = payload.guests || {};
-        const defaultKey = payload.defaultGuest || DEFAULT_INVITATION.slug;
-        const selected = guests[slug] || guests[defaultKey];
+        // Reduce animations on mobile
+        if (window.innerWidth < 768) {
+          CONFIG.particleCount = 50;
+          CONFIG.confettiCount = 30;
+        }
+      }
 
-        if (!selected) {
-            console.warn(`Không tìm thấy khách mời với mã "${slug}", dùng dữ liệu mặc định.`);
+      // ===================================
+      // Accessibility
+      // ===================================
+      function initAccessibility() {
+        // Add ARIA live region
+        const liveRegion = document.createElement("div");
+        liveRegion.setAttribute("aria-live", "polite");
+        liveRegion.setAttribute("aria-atomic", "true");
+        liveRegion.className = "thieptotnghiep__sr-only";
+        liveRegion.style.cssText =
+          "position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;";
+        document.body.appendChild(liveRegion);
+
+        // Announce card state
+        DOM.openCard.addEventListener("click", () => {
+          liveRegion.textContent = "Thiệp mời lễ tốt nghiệp đã được mở";
+        });
+
+        DOM.closeCard.addEventListener("click", () => {
+          liveRegion.textContent = "Thiệp mời lễ tốt nghiệp đã được đóng";
+        });
+      }
+
+      // ===================================
+      // Data Loading & Binding
+      // ===================================
+      function getInvitationSlug() {
+        const params = new URLSearchParams(window.location.search);
+        const fromQuery = params.get("guest");
+        if (fromQuery) {
+          return decodeURIComponent(fromQuery.trim().toLowerCase());
+        }
+
+        const hash = window.location.hash.replace("#", "").trim().toLowerCase();
+        if (hash) {
+          return decodeURIComponent(hash);
+        }
+
+        const segments = window.location.pathname.split("/").filter(Boolean);
+        if (segments.length) {
+          const lastSegment = decodeURIComponent(
+            segments[segments.length - 1]
+          ).toLowerCase();
+          if (lastSegment) {
+            return lastSegment.replace(/\.html?$/i, "");
+          }
+        }
+
+        return DEFAULT_INVITATION.slug;
+      }
+
+      async function loadInvitationData() {
+        const slug = getInvitationSlug();
+
+        try {
+          const response = await fetch("data/invitations.json", {
+            cache: "no-store",
+          });
+          if (!response.ok) {
+            throw new Error(
+              `Không thể tải dữ liệu khách mời (HTTP ${response.status})`
+            );
+          }
+
+          const payload = await response.json();
+          const guests = payload.guests || {};
+          const defaultKey = payload.defaultGuest || DEFAULT_INVITATION.slug;
+          const selected = guests[slug] || guests[defaultKey];
+
+          if (!selected) {
+            console.warn(
+              `Không tìm thấy khách mời với mã "${slug}", dùng dữ liệu mặc định.`
+            );
             return { ...DEFAULT_INVITATION, slug };
+          }
+
+          return { ...DEFAULT_INVITATION, ...selected, slug };
+        } catch (error) {
+          console.warn(
+            "Không thể tải dữ liệu từ JSON, dùng dữ liệu mặc định.",
+            error
+          );
+          return { ...DEFAULT_INVITATION, slug: DEFAULT_INVITATION.slug };
+        }
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      function applyInvitationData(invitation) {
+        if (!invitation) {
+          return;
         }
 
-        return { ...DEFAULT_INVITATION, ...selected, slug };
-    } catch (error) {
-        console.warn('Không thể tải dữ liệu từ JSON, dùng dữ liệu mặc định.', error);
-        return { ...DEFAULT_INVITATION, slug: DEFAULT_INVITATION.slug };
-    }
-}
-
-function escapeHtml(value) {
-    return String(value)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#39;');
-}
-
-function applyInvitationData(invitation) {
-    if (!invitation) {
-        return;
-    }
-
-    if (DYNAMIC.avatar && invitation.image) {
-        DYNAMIC.avatar.src = invitation.image;
-        DYNAMIC.avatar.alt = `Ảnh đại diện ${invitation.name || 'khách mời'}`;
-    }
-
-    if (DYNAMIC.name) {
-        DYNAMIC.name.textContent = invitation.name || DEFAULT_INVITATION.name;
-    }
-
-    if (DYNAMIC.age) {
-        DYNAMIC.age.textContent = invitation.age != null ? invitation.age : DEFAULT_INVITATION.age;
-    }
-
-    if (DYNAMIC.dateDisplay) {
-        const dateText = invitation.dateDisplay || DEFAULT_INVITATION.dateDisplay;
-        DYNAMIC.dateDisplay.textContent = dateText;
-        const dateAttr = invitation.dateISO || DEFAULT_INVITATION.dateISO;
-        if (dateAttr) {
-            DYNAMIC.dateDisplay.setAttribute('datetime', dateAttr);
+        if (DYNAMIC.avatar && invitation.image) {
+          DYNAMIC.avatar.src = invitation.image;
+          DYNAMIC.avatar.alt = `Ảnh đại diện ${invitation.name || "khách mời"}`;
         }
-    }
 
-    if (DYNAMIC.timeRange) {
-        DYNAMIC.timeRange.textContent = invitation.time || DEFAULT_INVITATION.time;
-    }
+        if (DYNAMIC.name) {
+          DYNAMIC.name.textContent = invitation.name || DEFAULT_INVITATION.name;
+        }
 
-    if (DYNAMIC.location) {
-        const locationValue = invitation.location || DEFAULT_INVITATION.location;
-        if (Array.isArray(locationValue)) {
+        if (DYNAMIC.age) {
+          DYNAMIC.age.textContent =
+            invitation.age != null ? invitation.age : DEFAULT_INVITATION.age;
+        }
+
+        if (DYNAMIC.dateDisplay) {
+          const dateText =
+            invitation.dateDisplay || DEFAULT_INVITATION.dateDisplay;
+          DYNAMIC.dateDisplay.textContent = dateText;
+          const dateAttr = invitation.dateISO || DEFAULT_INVITATION.dateISO;
+          if (dateAttr) {
+            DYNAMIC.dateDisplay.setAttribute("datetime", dateAttr);
+          }
+        }
+
+        if (DYNAMIC.timeRange) {
+          DYNAMIC.timeRange.textContent =
+            invitation.time || DEFAULT_INVITATION.time;
+        }
+
+        if (DYNAMIC.location) {
+          const locationValue =
+            invitation.location || DEFAULT_INVITATION.location;
+          if (Array.isArray(locationValue)) {
             DYNAMIC.location.innerHTML = locationValue
-                .map(line => escapeHtml(line))
-                .join('<br>');
-        } else if (typeof locationValue === 'string') {
-            DYNAMIC.location.innerHTML = escapeHtml(locationValue).replace(/\n/g, '<br>');
+              .map((line) => escapeHtml(line))
+              .join("<br>");
+          } else if (typeof locationValue === "string") {
+            DYNAMIC.location.innerHTML = escapeHtml(locationValue).replace(
+              /\n/g,
+              "<br>"
+            );
+          }
         }
-    }
 
-    if (DYNAMIC.message) {
-        DYNAMIC.message.textContent = invitation.message || DEFAULT_INVITATION.message;
-    }
-}
+        if (DYNAMIC.message) {
+          DYNAMIC.message.textContent =
+            invitation.message || DEFAULT_INVITATION.message;
+        }
+      }
 
-function updateMetaTags(invitation) {
-    const guestName = invitation.name || DEFAULT_INVITATION.name;
-    const fallbackTitle = `Thiệp mời lễ tốt nghiệp của ${guestName}`;
-    const title = invitation.metaTitle || fallbackTitle;
-    const description = invitation.metaDescription || DEFAULT_INVITATION.metaDescription;
+      function updateMetaTags(invitation) {
+        const guestName = invitation.name || DEFAULT_INVITATION.name;
+        const fallbackTitle = `Thiệp mời lễ tốt nghiệp của ${guestName}`;
+        const title = invitation.metaTitle || fallbackTitle;
+        const description =
+          invitation.metaDescription || DEFAULT_INVITATION.metaDescription;
 
-    document.title = title;
+        document.title = title;
 
-    const metaDefinitions = [
-        ['meta[name="description"]', 'content', description],
-        ['meta[property="og:title"]', 'content', title],
-        ['meta[property="og:description"]', 'content', description],
-        ['meta[property="og:image"]', 'content', invitation.image || DEFAULT_INVITATION.image]
-    ];
+        const metaDefinitions = [
+          ['meta[name="description"]', "content", description],
+          ['meta[property="og:title"]', "content", title],
+          ['meta[property="og:description"]', "content", description],
+          [
+            'meta[property="og:image"]',
+            "content",
+            invitation.image || DEFAULT_INVITATION.image,
+          ],
+        ];
 
-    metaDefinitions.forEach(([selector, attribute, value]) => {
-        const node = document.querySelector(selector);
-        if (node && value) {
+        metaDefinitions.forEach(([selector, attribute, value]) => {
+          const node = document.querySelector(selector);
+          if (node && value) {
             node.setAttribute(attribute, value);
-        }
-    });
-}
+          }
+        });
+      }
 
-function resolveCountdownDate(invitation) {
-    const candidates = [invitation.countdownDate, invitation.dateTime, invitation.dateISO];
-    for (const candidate of candidates) {
-        if (!candidate) {
+      function resolveCountdownDate(invitation) {
+        const candidates = [
+          invitation.countdownDate,
+          invitation.dateTime,
+          invitation.dateISO,
+        ];
+        for (const candidate of candidates) {
+          if (!candidate) {
             continue;
-        }
-        const parsed = new Date(candidate);
-        if (!Number.isNaN(parsed.getTime())) {
+          }
+          const parsed = new Date(candidate);
+          if (!Number.isNaN(parsed.getTime())) {
             return parsed;
+          }
         }
-    }
-    return new Date(DEFAULT_INVITATION.countdownDate);
-}
+        return new Date(DEFAULT_INVITATION.countdownDate);
+      }
 
-// ===================================
-// Initialize Application
-// ===================================
-async function init() {
-    try {
-        console.log('🎉 Initializing Birthday Invitation...');
+      // ===================================
+      // Initialize Application
+      // ===================================
+      async function init() {
+        try {
+          console.log("🎉 Initializing Birthday Invitation...");
 
-        const invitation = await loadInvitationData();
-        applyInvitationData(invitation);
-        updateMetaTags(invitation);
-        CONFIG.birthdayDate = resolveCountdownDate(invitation);
-        
-        // Core features
-        initCanvas();
-        createDOMParticles();
-        initMusicPlayer();
-        initCardFlip();
-        initCountdown();
-        
-        // Enhancement features
-        initMouseEffects();
-        initTouchGestures();
-        initKeyboardNavigation();
-        initPerformanceOptimization();
-        initAccessibility();
-        
-        console.log('✅ Birthday Invitation initialized successfully!');
-    } catch (error) {
-        console.error('❌ Initialization error:', error);
-    }
-}
+          const invitation = await loadInvitationData();
+          applyInvitationData(invitation);
+          updateMetaTags(invitation);
+          CONFIG.birthdayDate = resolveCountdownDate(invitation);
 
-// ===================================
-// Start Application
-// ===================================
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-} else {
-    init();
-}
+          // Core features
+          initCanvas();
+          createDOMParticles();
+          initMusicPlayer();
+          initCardFlip();
+          initCountdown();
 
-// ===================================
-// Export for testing (optional)
-// ===================================
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = {
-        CONFIG,
-        STATE,
-        Particle,
-        Confetti,
-        createConfettiBurst
-    };
-}
+          // Enhancement features
+          initMouseEffects();
+          initTouchGestures();
+          initKeyboardNavigation();
+          initPerformanceOptimization();
+          initAccessibility();
 
+          console.log("✅ Birthday Invitation initialized successfully!");
+        } catch (error) {
+          console.error("❌ Initialization error:", error);
+        }
+      }
+
+      // ===================================
+      // Start Application
+      // ===================================
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+      } else {
+        init();
+      }
+
+      // ===================================
+      // Export for testing (optional)
+      // ===================================
+      if (typeof module !== "undefined" && module.exports) {
+        module.exports = {
+          CONFIG,
+          STATE,
+          Particle,
+          Confetti,
+          createConfettiBurst,
+        };
+      }
     </script>
     <script>
-  // Đọc dữ liệu từ invitations.json
-  fetch('data/invitations.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Không tải được invitations.json');
-      }
-      return response.json();
-    })
-    .then(data => {
-      // Lấy key guest từ URL: ?guest=van-mai
-      const params = new URLSearchParams(window.location.search);
-      const guestKeyFromUrl = params.get('guest');
+      // Đọc dữ liệu từ invitations.json
+      fetch("data/invitations.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Không tải được invitations.json");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          // Lấy key guest từ URL: ?guest=van-mai
+          const params = new URLSearchParams(window.location.search);
+          const guestKeyFromUrl = params.get("guest");
 
-      // Nếu URL không có hoặc không khớp, dùng defaultGuest
-      const fallbackKey = data.defaultGuest;
-      const guestKey = (guestKeyFromUrl && data.guests[guestKeyFromUrl])
-        ? guestKeyFromUrl
-        : fallbackKey;
+          // Nếu URL không có hoặc không khớp, dùng defaultGuest
+          const fallbackKey = data.defaultGuest;
+          const guestKey =
+            guestKeyFromUrl && data.guests[guestKeyFromUrl]
+              ? guestKeyFromUrl
+              : fallbackKey;
 
-      const guest = data.guests[guestKey];
+          const guest = data.guests[guestKey];
 
-      // Cập nhật nội dung trang
-      // Ví dụ: tên, tuổi, ngày, giờ, địa điểm, lời nhắn, ảnh, meta...
-      // Bạn chỉnh lại selector cho đúng HTML của mình
+          // Cập nhật nội dung trang
+          // Ví dụ: tên, tuổi, ngày, giờ, địa điểm, lời nhắn, ảnh, meta...
+          // Bạn chỉnh lại selector cho đúng HTML của mình
 
-      // Tên khách
-      const nameEls = document.querySelectorAll('[data-field="guest-name"]');
-      nameEls.forEach(el => el.textContent = guest.name);
+          // Tên khách
+          const nameEls = document.querySelectorAll(
+            '[data-field="guest-name"]'
+          );
+          nameEls.forEach((el) => (el.textContent = guest.name));
 
-      // Tuổi (nếu có dùng)
-      const ageEl = document.querySelector('[data-field="guest-age"]');
-      if (ageEl) {
-        ageEl.textContent = guest.age;
-      }
+          // Tuổi (nếu có dùng)
+          const ageEl = document.querySelector('[data-field="guest-age"]');
+          if (ageEl) {
+            ageEl.textContent = guest.age;
+          }
 
-      // Ngày hiển thị (chuỗi tiếng Việt)
-      const dateDisplayEl = document.querySelector('[data-field="date-display"]');
-      if (dateDisplayEl) {
-        dateDisplayEl.textContent = guest.dateDisplay;
-      }
+          // Ngày hiển thị (chuỗi tiếng Việt)
+          const dateDisplayEl = document.querySelector(
+            '[data-field="date-display"]'
+          );
+          if (dateDisplayEl) {
+            dateDisplayEl.textContent = guest.dateDisplay;
+          }
 
-      // Giờ
-      const timeEl = document.querySelector('[data-field="time"]');
-      if (timeEl) {
-        timeEl.textContent = guest.time;
-      }
+          // Giờ
+          const timeEl = document.querySelector('[data-field="time"]');
+          if (timeEl) {
+            timeEl.textContent = guest.time;
+          }
 
-      // Địa điểm (mảng nhiều dòng)
-      const locationEl = document.querySelector('[data-field="location"]');
-      if (locationEl && Array.isArray(guest.location)) {
-        locationEl.innerHTML = guest.location.join('<br>');
-      }
+          // Địa điểm (mảng nhiều dòng)
+          const locationEl = document.querySelector('[data-field="location"]');
+          if (locationEl && Array.isArray(guest.location)) {
+            locationEl.innerHTML = guest.location.join("<br>");
+          }
 
-      // Lời nhắn
-      const messageEl = document.querySelector('[data-field="message"]');
-      if (messageEl) {
-        messageEl.textContent = guest.message;
-      }
+          // Lời nhắn
+          const messageEl = document.querySelector('[data-field="message"]');
+          if (messageEl) {
+            messageEl.textContent = guest.message;
+          }
 
-      // Ảnh đại diện
-      const avatarEl = document.querySelector('[data-field="avatar"]');
-      if (avatarEl) {
-        avatarEl.src = guest.image;
-        avatarEl.alt = guest.name;
-      }
+          // Ảnh đại diện
+          const avatarEl = document.querySelector('[data-field="avatar"]');
+          if (avatarEl) {
+            avatarEl.src = guest.image;
+            avatarEl.alt = guest.name;
+          }
 
-      // Meta title / description cho share link
-      if (guest.metaTitle) {
-        document.title = guest.metaTitle;
-        const ogTitle = document.querySelector('meta[property="og:title"]');
-        const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-        if (ogTitle) ogTitle.setAttribute('content', guest.metaTitle);
-        if (twitterTitle) twitterTitle.setAttribute('content', guest.metaTitle);
-      }
+          // Meta title / description cho share link
+          if (guest.metaTitle) {
+            document.title = guest.metaTitle;
+            const ogTitle = document.querySelector('meta[property="og:title"]');
+            const twitterTitle = document.querySelector(
+              'meta[name="twitter:title"]'
+            );
+            if (ogTitle) ogTitle.setAttribute("content", guest.metaTitle);
+            if (twitterTitle)
+              twitterTitle.setAttribute("content", guest.metaTitle);
+          }
 
-      if (guest.metaDescription) {
-        const desc = document.querySelector('meta[name="description"]');
-        const ogDesc = document.querySelector('meta[property="og:description"]');
-        const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-        if (desc) desc.setAttribute('content', guest.metaDescription);
-        if (ogDesc) ogDesc.setAttribute('content', guest.metaDescription);
-        if (twitterDesc) twitterDesc.setAttribute('content', guest.metaDescription);
-      }
+          if (guest.metaDescription) {
+            const desc = document.querySelector('meta[name="description"]');
+            const ogDesc = document.querySelector(
+              'meta[property="og:description"]'
+            );
+            const twitterDesc = document.querySelector(
+              'meta[name="twitter:description"]'
+            );
+            if (desc) desc.setAttribute("content", guest.metaDescription);
+            if (ogDesc) ogDesc.setAttribute("content", guest.metaDescription);
+            if (twitterDesc)
+              twitterDesc.setAttribute("content", guest.metaDescription);
+          }
 
-      // TODO: nếu bạn có countdown thì ở đây đọc guest.countdownDate và khởi động lại đồng hồ
-    })
-    .catch(err => {
-      console.error(err);
-      // Có thể hiển thị thông báo lỗi nhẹ nhàng nếu muốn
-    });
-</script>
-
-</body>
+          // TODO: nếu bạn có countdown thì ở đây đọc guest.countdownDate và khởi động lại đồng hồ
+        })
+        .catch((err) => {
+          console.error(err);
+          // Có thể hiển thị thông báo lỗi nhẹ nhàng nếu muốn
+        });
+    </script>
+  </body>
 </html>
