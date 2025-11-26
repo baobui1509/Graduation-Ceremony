@@ -3,12 +3,112 @@
   "guests": {
         "ma-bu": {
       "name": "mabu",
-      "age": "Vợ iu",
+      "aka": "Vợ iu",
       "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
       "image": "img/bu.jpg",
       "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho mabu",
       "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
       "sharePath": "index.html?guest=ma-bu"
-    }
+    },
+      "le-thanh-truong": {
+        "name": "Lê Thành Trưởng",
+        "aka": "Lê Ttrưởng",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/letruong.jpg",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Trưởng",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=le-thanh-truong"
+    },
+      "pham-hoang-le": {
+        "name": "Phạm Hoàng Lê",
+        "aka": "Lê Phồn",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/phamhoangle.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Lê",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=pham-hoang-le"
+      },
+      "hung-cuong": {
+        "name": "Hùng Cường",
+        "aka": "Người thầy của các em",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/hungcuong.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Cường",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=hung-cuong"
+      },
+      "tram-bui": {
+        "name": "Trâm Bùi",
+        "aka": "Bùi Bùi",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/trambui.jpg",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Trâm",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=tram-bui"
+      },
+      "duc-tran": {
+        "name": "Đức Trần",
+        "aka": "Đức cớp - Đức cùm - Đức cống",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/duc.jpg",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Đức",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=duc-tran"
+      },
+      "phong-luong": {
+        "name": "Lương Minh Phong",
+        "aka": "Thằng em anh Bảo",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/phongluong.jpg",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Phong",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=phong-luong"
+      },
+      "chinh": {
+        "name": "Trần Đình Chinh",
+        "aka": "Chinh đù",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/chinh.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Chinh",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=chinh"
+      },
+      "ngoc-han": {
+        "name": "Ngọc Hân",
+        "aka": "beiu2",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/ngochan.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Hân",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=ngoc-han"
+      },
+      "ngan-tran": {
+        "name": "Ngân Trần",
+        "aka": "beiu1",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/ngantran.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Ngân",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=ngan-tran"
+      },
+      "tung": {
+        "name": "Nguyễn Đình Tùng (đã tốt nghiệp)",
+        "aka": "Học trò cưng",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/tung.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Tùng",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=tung"
+      },
+      "tuan": {
+        "name": "Trần Thanh Tuân",
+        "aka": "Học trò cưng (đã tốt nghiệp)",
+        "message": "Sự có mặt của bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/tuan.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Tuân",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=tuan"
+      }
   }
+  
 }
