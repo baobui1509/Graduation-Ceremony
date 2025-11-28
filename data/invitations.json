@@ -108,6 +108,15 @@
         "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Tuân",
         "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
         "sharePath": "index.html?guest=tuan"
+      },
+      "tk17": {
+        "name": "TK17",
+        "aka": "Rạp xiếc Trung ương",
+        "message": "Sự có mặt của các bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/tk17.jpg",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho TK17",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=tk17"
       }
   }
   
