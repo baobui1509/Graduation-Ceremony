@@ -117,6 +117,15 @@
         "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho TK17",
         "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
         "sharePath": "index.html?guest=tk17"
+      },
+      "bang": {
+        "name": "Phạm Công Bằng",
+        "aka": "Anh =4",
+        "message": "Sự có mặt của các bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/bang.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Bằng",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=bang"
       }
   }
   
