@@ -135,6 +135,15 @@
         "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho dth",
         "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
         "sharePath": "index.html?guest=dth"
+      },
+      "dthu": {
+        "name": "Diệu Thư",
+        "aka": "Cốt Đà Nẵng",
+        "message": "Sự có mặt của các bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/dthu.png",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Thư",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=dthu"
       }
   }
   
