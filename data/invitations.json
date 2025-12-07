@@ -126,6 +126,15 @@
         "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho Bằng",
         "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
         "sharePath": "index.html?guest=bang"
+      },
+      "dth": {
+        "name": "Dương Thanh Hương",
+        "aka": "dth dth",
+        "message": "Sự có mặt của các bạn là niềm vinh hạnh lớn đối với tôi trong ngày trọng đại này.",
+        "image": "img/dth.jpg",
+        "metaTitle": "Thiệp mời lễ tốt nghiệp dành cho dth",
+        "metaDescription": "Thiệp mời lễ tốt nghiệp tại Trường Đại học Khoa học Tự nhiên.",
+        "sharePath": "index.html?guest=dth"
       }
   }
   
